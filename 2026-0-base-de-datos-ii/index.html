@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyectos académicos de Base de Datos II de Justin Soledispa.">
+  <title>Base de Datos II | Justin Soledispa</title>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./base-datos-ii.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+  <nav class="navbar" aria-label="Navegación principal">
+    <a class="navbar-logo" href="../index.html">Justin Soledispa</a>
+
+    <div class="navbar-links">
+      <a href="../index.html">Inicio</a>
+      <a class="activo" href="../proyectos.html">Proyectos</a>
+      <a href="../logros.html">Logros</a>
+      <a href="../index.html#contacto">Contacto</a>
+      <a href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero hero-materia">
+    <div class="hero-layout">
+      <div class="hero-contenido">
+        <span class="hero-etiqueta" data-num="00">MATERIA</span>
+
+        <h1>Base de Datos II</h1>
+
+        <p class="hero-subtitulo">Proyectos de la materia</p>
+
+        <p class="hero-descripcion">
+          Página dedicada al proyecto académico desarrollado en Base de Datos II, enfocado en la construcción de un Data Warehouse, procesos ETL, modelo dimensional y dashboards analíticos para el sistema Enreach.
+        </p>
+
+        <div class="hero-acciones">
+          <a class="boton-ver-proyectos" href="#proyectos">Ver proyectos</a>
+          <a class="boton-secundario" href="../proyectos.html">Volver a proyectos</a>
+        </div>
+      </div>
+
+      <aside class="panel-info panel-resumen" aria-label="Resumen de Base de Datos II">
+        <div class="resumen-item">
+          <span class="resumen-numero">1</span>
+          <span class="resumen-texto">proyecto registrado</span>
+        </div>
+
+        <div class="resumen-item">
+          <span class="resumen-numero">DW</span>
+          <span class="resumen-texto">enfoque principal</span>
+        </div>
+
+        <div class="resumen-item">
+          <span class="resumen-numero">2026-0</span>
+          <span class="resumen-texto">periodo académico</span>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section id="proyectos" class="seccion-proyectos seccion-amplia" aria-labelledby="titulo-proyectos">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion" data-num="01">PROYECTOS</span>
+        <h2 id="titulo-proyectos">Proyectos desarrollados</h2>
+        <p>
+          Repositorio asociado a la materia Base de Datos II.
+        </p>
+      </div>
+
+      <div class="grid-materias grid-proyectos">
+        <article class="tarjeta-materia tarjeta-proyecto">
+          <img class="thumbnail-proyecto" src="../img/proyectos/enreach/thumbnail.png" alt="Vista previa de Enreach">
+          <div class="materia-header">
+            <span class="badge badge-finalizado">Finalizado</span>
+            <h3>ENREACH DATA WAREHOUSE/BI</h3>
+          </div>
+
+          <p>
+            Implementación de un Data Warehouse para el sistema Enreach. Integra ETL con Pentaho Spoon, modelo dimensional en PostgreSQL, funciones SQL analíticas, API REST en Spring Boot y dashboards web en React.
+          </p>
+
+          <div class="aporte-proyecto">
+            <strong>Mi aporte:</strong> desarrollo de la Vista Partner, reportes analíticos, consultas SQL y conexión de datos para el dashboard.
+          </div>
+
+          <a 
+            class="boton-ver-proyectos" 
+            href="https://github.com/juandifrost17/proyecto_bd2_enreach" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            Ver repositorio
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="temas" class="seccion-info seccion-amplia" aria-labelledby="titulo-temas">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion" data-num="02">TEMAS</span>
+        <h2 id="titulo-temas">Temas aplicados</h2>
+        <p>
+          Conceptos trabajados durante el desarrollo de los proyectos de la materia.
+        </p>
+      </div>
+
+      <div class="grid-tecnologias">
+  <article class="panel-info tarjeta-tecnologia">
+    <h3>Data Warehouse</h3>
+    <ul class="lista-tecnologias">
+      <li>Modelo Kimball</li>
+      <li>Modelo dimensional</li>
+      <li>PostgreSQL</li>
+    </ul>
+  </article>
+
+  <article class="panel-info tarjeta-tecnologia">
+    <h3>ETL</h3>
+    <ul class="lista-tecnologias">
+      <li>Pentaho Spoon</li>
+      <li>Transformaciones</li>
+      <li>OLTP a OLAP</li>
+    </ul>
+  </article>
+
+  <article class="panel-info tarjeta-tecnologia">
+    <h3>Analítica</h3>
+    <ul class="lista-tecnologias">
+      <li>KPIs</li>
+      <li>Reportes</li>
+      <li>Funciones SQL</li>
+    </ul>
+  </article>
+
+  <article class="panel-info tarjeta-tecnologia">
+    <h3>Aplicación BI</h3>
+    <ul class="lista-tecnologias">
+      <li>Spring Boot</li>
+      <li>React + Vite</li>
+      <li>Recharts</li>
+    </ul>
+  </article>
+</div>
+    </section>
+
+    <section class="seccion-info seccion-volver" aria-label="Volver al portafolio">
+      <div class="panel-info panel-contacto">
+        <span class="etiqueta-seccion" data-num="03">REGRESO</span>
+        <h2>Volver al portafolio</h2>
+        <p>
+          Regresa al listado general de materias y proyectos académicos.
+        </p>
+
+        <a class="boton-contacto" href="../proyectos.html">← Volver a proyectos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Justin Soledispa.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

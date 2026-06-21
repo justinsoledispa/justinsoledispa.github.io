@@ -1,0 +1,158 @@
+/* =========================================================
+   6. MATERIAS / PROYECTOS GENERALES
+   ========================================================= */
+
+.grid-materias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.tarjeta-materia {
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  transition: transform 0.16s ease, border-color 0.16s ease, background-color 0.16s ease;
+}
+
+.tarjeta-materia:hover {
+  transform: translateY(-10px);
+  background: var(--panel-alt);
+  border-color: var(--violet);
+}
+
+.thumbnail-proyecto {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 1.15rem;
+  object-fit: cover;
+  background: var(--bg);
+  border: 1px solid var(--line-strong);
+}
+
+.aporte-proyecto {
+  width: fit-content;
+  margin: 1rem 0 1.25rem;
+  padding: 0.65rem 0.85rem;
+  color: var(--text);
+  background: var(--bg);
+  border-left: 4px solid var(--cyan);
+  font-family: var(--font-main);
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+.aporte-proyecto strong {
+  color: var(--cyan);
+}
+
+.materia-header {
+  padding-bottom: 1.1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.materia-meta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.semestre {
+  display: inline-flex;
+  margin-bottom: 0.85rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.semestre::before {
+  content: "//";
+  margin-right: 0.45rem;
+  color: var(--lime);
+}
+
+.materia-meta .semestre,
+.materia-meta .badge {
+  margin-bottom: 0;
+}
+
+.materia-header h3 {
+  font-size: clamp(1.5rem, 3.6vw, 2.15rem);
+  line-height: 1.05;
+}
+
+.timeline-academica {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.timeline-periodo {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1.4rem;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-left: 6px solid var(--violet);
+}
+
+.timeline-fecha {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.35rem 0.55rem;
+  color: var(--lime);
+  background: var(--bg);
+  border: 1px solid var(--cyan);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.timeline-fecha::before {
+  content: "// ";
+  color: var(--cyan);
+}
+
+.timeline-contenido {
+  display: grid;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.timeline-contenido h3 {
+  margin-top: 0.35rem;
+  color: var(--text);
+  font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+}
+
+.timeline-contenido h3:first-child {
+  margin-top: 0;
+}
+
+.timeline-contenido p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.timeline-contenido strong {
+  color: var(--cyan);
+}
+
+@media (max-width: 760px) {
+  .timeline-periodo {
+    grid-template-columns: 1fr;
+  }
+}

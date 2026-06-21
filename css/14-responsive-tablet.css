@@ -1,0 +1,84 @@
+/* =========================================================
+   13. RESPONSIVE: TABLETS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .hero-layout,
+  .layout-dos-columnas {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .hero-contenido,
+  .hero h1 {
+    max-width: 850px;
+  }
+
+  .panel-resumen {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --nav-height: 112px;
+  }
+
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding: 1rem;
+  }
+
+  .navbar::after {
+    right: 1rem;
+    bottom: 0.75rem;
+    width: 170px;
+  }
+
+  .navbar-links {
+    justify-content: flex-start;
+  }
+
+  .hero {
+    min-height: calc(100vh - var(--nav-height));
+    padding: 4.8rem 1rem;
+  }
+
+  .hero::before {
+    left: 1rem;
+    right: 1rem;
+  }
+
+  .hero::after {
+    left: 1rem;
+    bottom: 3rem;
+    width: 130px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 12vw, 5.8rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
+  }
+
+  .seccion-amplia {
+    min-height: auto;
+    padding: 4.5rem 0;
+  }
+
+  .grid-contacto {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .hackaton-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hackaton-meta {
+    max-width: 520px;
+  }
+}

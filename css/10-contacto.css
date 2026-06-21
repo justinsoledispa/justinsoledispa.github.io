@@ -1,0 +1,46 @@
+/* =========================================================
+   9. CONTACTO
+   ========================================================= */
+
+.seccion-contacto-final {
+  min-height: 62vh;
+}
+
+.panel-contacto {
+  text-align: left;
+}
+
+.panel-contacto p {
+  margin-bottom: 1.2rem;
+}
+
+.grid-contacto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.tarjeta-contacto {
+  min-height: 245px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 1.45rem;
+}
+
+.tarjeta-contacto h3 {
+  color: var(--text);
+  font-size: clamp(1.35rem, 2.8vw, 2rem);
+  line-height: 1.08;
+}
+
+.tarjeta-contacto p {
+  flex: 1;
+  line-height: 1.7;
+}
+
+.tarjeta-contacto .boton-contacto {
+  margin-top: auto;
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyectos académicos de Lenguajes de Programación de Justin Soledispa.">
+  <title>Lenguajes de Programación | Justin Soledispa</title>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./lenguajes-programacion.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body class="pagina-materia materia-lenguajes-programacion">
+  <nav class="navbar" aria-label="Navegación principal">
+    <a class="navbar-logo" href="../index.html">Justin Soledispa</a>
+
+    <div class="navbar-links">
+      <a href="../index.html">Inicio</a>
+      <a class="activo" href="../proyectos.html">Proyectos</a>
+      <a href="../logros.html">Logros</a>
+      <a href="../index.html#contacto">Contacto</a>
+      <a href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero hero-materia">
+    <div class="hero-layout">
+      <div class="hero-contenido">
+        <span class="hero-etiqueta" data-num="00">MATERIA</span>
+
+        <h1>Lenguajes de Programación</h1>
+
+        <p class="hero-subtitulo">Proyectos de la materia</p>
+
+        <p class="hero-descripcion">
+          Página dedicada a proyectos académicos donde se integran Laravel, PHP, Prolog, Blade y MySQL para construir simuladores web, reglas lógicas, validaciones por roles y flujos interactivos de decisión.
+        </p>
+
+        <div class="hero-acciones">
+          <a class="boton-ver-proyectos" href="#proyectos">Ver proyectos</a>
+          <a class="boton-secundario" href="../proyectos.html">Volver a proyectos</a>
+        </div>
+      </div>
+
+      <aside class="panel-info panel-resumen" aria-label="Resumen de Lenguajes de Programación">
+        <div class="resumen-item">
+          <span class="resumen-numero">2</span>
+          <span class="resumen-texto">proyectos desarrollados</span>
+        </div>
+
+        <div class="resumen-item">
+          <span class="resumen-numero">Laravel</span>
+          <span class="resumen-texto">framework principal</span>
+        </div>
+
+        <div class="resumen-item">
+          <span class="resumen-numero">2026 - 1</span>
+          <span class="resumen-texto">periodo académico</span>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section id="proyectos" class="seccion-proyectos seccion-amplia" aria-labelledby="titulo-proyectos">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion" data-num="01">PROYECTOS</span>
+        <h2 id="titulo-proyectos">Proyectos desarrollados</h2>
+        <p>
+          Aplicaciones académicas construidas para practicar integración entre lenguajes, programación lógica, control de acceso, validaciones de negocio y desarrollo web con Laravel.
+        </p>
+      </div>
+
+      <div class="grid-materias grid-proyectos">
+        <article class="tarjeta-materia tarjeta-proyecto">
+          <img class="thumbnail-proyecto" src="../img/proyectos/laravel-prolog-rpg/thumbnail.png" alt="Vista previa de Laravel Prolog RPG">
+          <div class="materia-header">
+            <span class="badge badge-finalizado">Finalizado</span>
+            <h3>Laravel Prolog RPG</h3>
+          </div>
+
+          <p>
+            Simulador RPG web donde el usuario selecciona personaje, misión y enemigo. Laravel procesa el formulario, ejecuta una consulta en SWI-Prolog y muestra si el personaje cumple nivel, requisitos de inventario y resultado de combate.
+          </p>
+
+          <div class="aporte-proyecto">
+            <strong>Mi aporte:</strong> integración entre Laravel y Prolog, flujo de selección de misión y validación de reglas lógicas del simulador.
+          </div>
+
+          <ul class="lista-tecnologias lista-proyecto">
+            <li>Laravel 13</li>
+            <li>PHP 8.3</li>
+            <li>SWI-Prolog</li>
+            <li>Blade</li>
+          </ul>
+
+          <a 
+            class="boton-ver-proyectos" 
+            href="https://github.com/justinsoledispa/laravel-prolog-game-simulator" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            Ver repositorio
+          </a>
+        </article>
+
+        <article class="tarjeta-materia tarjeta-proyecto">
+          <img class="thumbnail-proyecto" src="../img/proyectos/stadpass/thumbnail.png" alt="Vista previa de StadPass">
+          <div class="materia-header">
+            <span class="badge badge-finalizado">Finalizado</span>
+            <h3>StadPass</h3>
+          </div>
+
+          <p>
+            Sistema de acreditación y control de acceso a estadios. Gestiona administradores, operadores y usuarios finales, emite credenciales digitales, valida puntos de acceso por zona y registra intentos aprobados o rechazados.
+          </p>
+
+          <div class="aporte-proyecto">
+            <strong>Mi aporte:</strong> módulo de operador, usuario final, emisión de credenciales, simulación de acceso y reportes.
+          </div>
+
+          <ul class="lista-tecnologias lista-proyecto">
+            <li>Laravel 13</li>
+            <li>PHP 8.5</li>
+            <li>Blade + Bootstrap</li>
+            <li>MySQL</li>
+            <li>Middleware por rol</li>
+          </ul>
+
+          <a 
+            class="boton-ver-proyectos" 
+            href="https://github.com/justinsoledispa/acceso-estadio-laravel" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            Ver repositorio
+          </a>
+        </article>
+
+        <article class="tarjeta-materia tarjeta-proyecto">
+          <div class="materia-header">
+            <span class="badge badge-pendiente">Pendiente</span>
+            <h3>Unity</h3>
+          </div>
+
+          <p>
+            Espacio reservado para el tercer proyecto de la materia.
+          </p>
+
+          <div class="aporte-proyecto">
+            <strong>Mi aporte:</strong> pendiente de documentar junto con el avance del proyecto.
+          </div>
+
+          <ul class="lista-tecnologias lista-proyecto">
+            <li>Videojuegos</li>
+            <li>Misiones</li>
+            <li>Niveles</li>
+            <li>Android Studio</li>
+          </ul>
+
+          <span class="boton-secundario">
+            Próximamente
+          </span>
+        </article>
+      </div>
+    </section>
+
+    <section id="conceptos" class="seccion-info seccion-amplia" aria-labelledby="titulo-conceptos">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion" data-num="02">CONCEPTOS</span>
+        <h2 id="titulo-conceptos">Conceptos aplicados</h2>
+        <p>
+          Ideas principales trabajadas en los proyectos de la materia.
+        </p>
+      </div>
+
+      <div class="grid-tecnologias">
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Programación lógica</h3>
+          <ul class="lista-tecnologias">
+            <li>Base de conocimiento</li>
+            <li>Reglas de misión</li>
+            <li>Consultas Prolog</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Control de acceso</h3>
+          <ul class="lista-tecnologias">
+            <li>Middleware</li>
+            <li>Métricas</li>
+            <li>Transaccionalidad</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Proyecto pendiente</h3>
+          <ul class="lista-tecnologias">
+            <li>Unity</li>
+            <li>Interacción</li>
+            <li>Simulación</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="seccion-info seccion-amplia" aria-labelledby="titulo-tecnologias">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion" data-num="03">TECNOLOGÍAS</span>
+        <h2 id="titulo-tecnologias">Tecnologías y funcionamiento</h2>
+        <p>
+          Herramientas utilizadas para construir, conectar y presentar los proyectos de la materia.
+        </p>
+      </div>
+
+      <div class="grid-tecnologias">
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Backend</h3>
+          <ul class="lista-tecnologias">
+            <li>Laravel</li>
+            <li>PHP</li>
+            <li>Controladores</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Lógica</h3>
+          <ul class="lista-tecnologias">
+            <li>Prolog</li>
+            <li>SWI-Prolog</li>
+            <li>Reglas</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Interfaz</h3>
+          <ul class="lista-tecnologias">
+            <li>Blade</li>
+            <li>Bootstrap/CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Datos</h3>
+          <ul class="lista-tecnologias">
+            <li>MySQL</li>
+            <li>Migraciones</li>
+            <li>Relaciones pivote</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion-info seccion-volver" aria-label="Volver al portafolio">
+      <div class="panel-info panel-contacto">
+        <span class="etiqueta-seccion" data-num="04">REGRESO</span>
+        <h2>Volver al portafolio</h2>
+        <p>
+          Regresa al listado general de materias y proyectos académicos.
+        </p>
+
+        <a class="boton-contacto" href="../proyectos.html">← Volver a proyectos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Justin Soledispa.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

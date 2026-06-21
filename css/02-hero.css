@@ -1,0 +1,129 @@
+/* =========================================================
+   2. HERO
+   ========================================================= */
+
+header,
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.hero {
+  min-height: calc(100vh - var(--nav-height));
+  display: grid;
+  place-items: center;
+  padding: 5.5rem 1.5rem;
+  border-bottom: 2px solid var(--line-strong);
+}
+
+.hero::before,
+.hero::after {
+  display: none;
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero::before {
+  top: 1.4rem;
+  left: 1.8rem;
+  right: 1.2rem;
+  height: 2px;
+  background: var(--cyan);
+}
+
+.hero::after {
+  left: 5.8rem;
+  bottom: 5.8rem;
+  width: min(22vw, 245px);
+  height: 12px;
+  background: var(--cyan);
+}
+
+.hero-layout {
+  position: relative;
+  z-index: 1;
+  width: min(var(--max-width), 100%);
+  display: grid;
+  grid-template-columns: minmax(0, 720px) minmax(300px, 400px);
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.hero-contenido {
+  max-width: 720px;
+  text-align: left;
+}
+
+.hero h1 {
+  max-width: 720px;
+  margin-top: 1.1rem;
+  margin-bottom: 0;
+  color: var(--text);
+  font-family: var(--font-heavy);
+  font-size: clamp(3.25rem, 7vw, 6.45rem);
+  font-weight: 900;
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.hero-subtitulo {
+  margin-top: 1.45rem;
+  color: var(--cyan);
+  font-family: var(--font-mono);
+  font-size: clamp(0.82rem, 1.4vw, 0.98rem);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.hero-descripcion {
+  max-width: 680px;
+  margin-top: 1.35rem;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.5vw, 1.12rem);
+  line-height: 1.75;
+}
+
+.hero-acciones {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2.25rem;
+}
+
+.hero-etiqueta,
+.etiqueta-seccion {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  color: var(--lime);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.hero-etiqueta::before {
+  content: "//";
+  margin-right: 0.65rem;
+  color: var(--violet);
+}
+
+.hero-etiqueta[data-num]::before,
+.etiqueta-seccion[data-num]::before {
+  content: attr(data-num) " / ";
+  margin-right: 0.7rem;
+  color: var(--lime);
+}

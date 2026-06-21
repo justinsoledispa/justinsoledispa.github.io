@@ -1,0 +1,123 @@
+/* =========================================================
+   HACKATONES
+   ========================================================= */
+
+.grid-hackatones {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+.tarjeta-hackaton {
+  width: 100%;
+  border-left-color: var(--violet);
+    transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.tarjeta-hackaton:hover,
+.tarjeta-hackaton.reveal.is-visible:hover {
+  transform: translateY(-10px);
+  background: var(--panel-alt);
+  border-color: var(--violet);
+  border-left-color: var(--violet);
+  box-shadow:
+    0 0 0 1px rgba(139, 92, 246, 0.45),
+    0 18px 38px rgba(139, 92, 246, 0.18);
+}
+
+.hackaton-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.hackaton-contenido {
+  min-width: 0;
+}
+
+.tarjeta-hackaton h3 {
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  line-height: 1.02;
+}
+
+.hackaton-track {
+  width: fit-content;
+  margin-bottom: 1.2rem;
+  padding: 0.65rem 0.85rem;
+  color: var(--text);
+  background: var(--bg);
+  border-left: 4px solid var(--cyan);
+  font-family: var(--font-main);
+  font-weight: 700;
+}
+
+.tarjeta-hackaton p {
+  max-width: 760px;
+  margin-bottom: 1.4rem;
+  line-height: 1.75;
+}
+
+.lista-hackaton {
+  margin-bottom: 1.5rem;
+}
+
+.hackaton-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hackaton-meta {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--line-strong);
+}
+
+.hackaton-meta .resumen-item {
+  background: var(--panel);
+}
+
+/* =========================================================
+   FIX: centrar meta de hackathon cuando hay 2 tarjetas
+   ========================================================= */
+.hackaton-imagen {
+  width: 100%;
+  margin: 0;
+  background: var(--bg);
+  border: 1px solid var(--line-strong);
+  overflow: hidden;
+}
+
+.hackaton-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.hackaton-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hackaton-meta {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  gap: 1rem;
+}
+
+.hackaton-meta .resumen-item {
+  min-height: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

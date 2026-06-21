@@ -1,0 +1,135 @@
+
+/* =========================================================
+   1. HERO DE MATERIA
+   ========================================================= */
+
+.hero-materia .hero-layout {
+  grid-template-columns: minmax(0, 720px) minmax(300px, 400px);
+}
+
+.hero-materia .hero-contenido,
+.hero-materia h1 {
+  max-width: 760px;
+}
+
+.hero-materia .panel-resumen .resumen-numero {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.hero-materia .panel-resumen .resumen-texto {
+  font-size: 0.72rem;
+}
+
+.hero-etiqueta,
+.etiqueta-seccion {
+  color: var(--lime);
+}
+
+.hero-etiqueta[data-num]::before,
+.etiqueta-seccion[data-num]::before {
+  content: attr(data-num) " / ";
+  color: var(--cyan);
+  margin-right: 0.7rem;
+}
+
+/* =========================================================
+   2. SECCIÓN DE PROYECTOS
+   ========================================================= */
+
+.grid-proyectos {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.tarjeta-proyecto {
+  min-height: auto;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1.8rem;
+}
+
+.tarjeta-proyecto .materia-header {
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.tarjeta-proyecto h3 {
+  font-size: clamp(1.7rem, 4vw, 2.65rem);
+  line-height: 1.05;
+}
+
+.tarjeta-proyecto p {
+  max-width: 920px;
+  margin-bottom: 1.1rem;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.tarjeta-proyecto .boton-ver-proyectos {
+  width: fit-content;
+  max-width: max-content;
+  align-self: flex-start;
+  padding-inline: 1.4rem;
+}
+
+/* =========================================================
+   3. SECCIÓN DE TEMAS APLICADOS
+   ========================================================= */
+
+#temas .grid-tecnologias {
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+}
+
+#temas .tarjeta-tecnologia {
+  min-height: 190px;
+}
+
+#temas .tarjeta-tecnologia h3 {
+  font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+}
+
+#temas .lista-tecnologias li {
+  font-size: 0.78rem;
+}
+
+/* =========================================================
+   4. SECCIÓN DE REGRESO
+   ========================================================= */
+
+.seccion-volver {
+  padding: 4rem 0;
+}
+
+.seccion-volver .panel-contacto {
+  width: 100%;
+  padding: 1.8rem;
+}
+
+.seccion-volver h2 {
+  max-width: 820px;
+}
+
+.seccion-volver .boton-contacto {
+  width: fit-content;
+  max-width: max-content;
+  padding-inline: 1.4rem;
+}
+
+/* =========================================================
+   5. RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .hero-materia .hero-layout,
+  #temas .grid-tecnologias {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .tarjeta-proyecto .boton-ver-proyectos,
+  .seccion-volver .boton-contacto {
+    width: 100%;
+    max-width: none;
+  }
+}

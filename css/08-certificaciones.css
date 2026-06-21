@@ -1,0 +1,109 @@
+/* =========================================================
+   8. CERTIFICACIONES
+   ========================================================= */
+
+.grid-certificaciones {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+.tarjeta-certificacion {
+  width: min(760px, 100%);
+  margin: 0;
+  border-left-color: var(--violet);
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+.tarjeta-certificacion:hover,
+.tarjeta-certificacion.reveal.is-visible:hover {
+  transform: translateY(-10px);
+  background: var(--panel-alt);
+  border-color: var(--violet);
+  border-left-color: var(--violet);
+}
+.certificacion-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 200px;
+  align-items: center;
+  gap: 2rem;
+}
+
+.certificacion-contenido {
+  min-width: 0;
+}
+
+.tarjeta-certificacion .materia-header {
+  margin-bottom: 1rem;
+}
+
+.tarjeta-certificacion h3 {
+  font-size: clamp(1.65rem, 3.6vw, 2.65rem);
+  line-height: 1.05;
+}
+
+.tarjeta-certificacion p {
+  margin-bottom: 1.4rem;
+  line-height: 1.75;
+}
+
+.certificacion-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--line-strong);
+}
+
+.badge-certificacion-img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  filter: none;
+  opacity: 1;
+  mix-blend-mode: normal;
+}
+
+.badge {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 0.85rem;
+  padding: 0.3rem 0.55rem;
+  border: 1px solid var(--line-strong);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.badge-pendiente {
+  color: var(--cyan);
+  background: var(--bg);
+  border-color: var(--cyan);
+}
+
+.badge-contador {
+  color: var(--cyan);
+  background: var(--bg);
+  border-color: var(--line-strong);
+}
+
+.tarjeta-materia:hover .badge-contador,
+.tarjeta-materia:focus-within .badge-contador {
+  color: var(--black);
+  background: var(--cyan);
+  border-color: var(--cyan);
+  box-shadow: 0 0 20px rgba(76, 192, 207, 0.35);
+}
+
+.badge-finalizado {
+  color: var(--black);
+  background: var(--lime);
+  border-color: var(--lime);
+}

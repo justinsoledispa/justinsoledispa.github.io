@@ -1,0 +1,17 @@
+/* =========================================================
+   AJUSTES ESPECIFICOS DEL INDEX
+   ========================================================= */
+
+#destacados .tarjeta-materia p {
+  margin-bottom: 1rem;
+}
+
+#destacados .tarjeta-materia .lista-tecnologias {
+  margin-top: 0.85rem;
+  margin-bottom: 1.45rem;
+}
+
+#destacados .tarjeta-materia .boton-ver-proyectos {
+  margin-top: auto;
+  width: 100%;
+}

@@ -1,0 +1,117 @@
+/* =========================================================
+   14. RESPONSIVE: CELULARES
+   ========================================================= */
+
+@media (max-width: 760px) {
+  :root {
+    --nav-height: 144px;
+  }
+
+  body {
+    padding-top: var(--nav-height);
+  }
+
+  .navbar-links {
+    gap: 0.45rem;
+  }
+
+  .navbar-links a {
+    min-height: 30px;
+    padding: 0.3rem 0.45rem;
+    font-size: 0.65rem;
+  }
+
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.8rem, 15vw, 4.9rem);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+  }
+
+  .hero-subtitulo {
+    margin-top: 1.25rem;
+  }
+
+  .hero-acciones {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .boton-ver-proyectos,
+  .boton-contacto,
+  .boton-secundario {
+    width: 100%;
+  }
+
+  main,
+  footer {
+    width: min(100% - 1rem, var(--max-width));
+  }
+
+  .panel-destacado,
+  .panel-info,
+  .tarjeta-materia,
+  .tarjeta-contacto {
+    padding: 1.15rem;
+  }
+
+  .grid-materias,
+  .grid-tecnologias {
+    grid-template-columns: 1fr;
+  }
+
+  .certificacion-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .certificacion-imagen {
+    order: -1;
+    justify-content: flex-start;
+  }
+
+  .badge-certificacion-img {
+    width: 150px;
+  }
+}
+
+/* =========================================================
+   15. RESPONSIVE: CELULARES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 520px) {
+  :root {
+    --nav-height: 170px;
+  }
+
+  .navbar-logo {
+    font-size: 1rem;
+  }
+
+  .hero-subtitulo {
+    font-size: 0.78rem;
+  }
+
+  .hero-descripcion,
+  .encabezado-seccion p,
+  .panel-destacado p {
+    font-size: 0.96rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.55rem, 14vw, 3.7rem);
+    letter-spacing: -0.025em;
+  }
+
+  h2 {
+    font-size: clamp(2.05rem, 14vw, 3.4rem);
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+  }
+
+  .panel-resumen {
+    padding: 0.8rem;
+  }
+}

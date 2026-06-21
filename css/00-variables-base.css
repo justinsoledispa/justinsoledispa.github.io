@@ -1,0 +1,56 @@
+:root {
+  --bg: #101018;
+  --panel: #181824;
+  --text: #F4F4F5;
+  --violet: #8B5CF6;
+  --cyan: #4cc0cf;
+  --lime: #abe34a;
+  --muted: #A1A1AA;
+
+  --black: #08080D;
+  --line: #2A2A38;
+  --line-strong: #3A3A4D;
+  --panel-alt: #202030;
+
+  --font-heavy: "Arial Black", Arial, Helvetica, sans-serif;
+  --font-main: Arial, Helvetica, sans-serif;
+  --font-mono: "IBM Plex Mono", "JetBrains Mono", monospace;
+
+  --radius: 0;
+  --max-width: 1180px;
+  --nav-height: 76px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-height) + 1.5rem);
+}
+
+body {
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-main);
+  line-height: 1.65;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--violet);
+  color: var(--text);
+}

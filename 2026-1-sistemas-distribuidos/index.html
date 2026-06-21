@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyectos académicos de Sistemas Distribuidos de Justin Soledispa.">
+  <title>Sistemas Distribuidos | Justin Soledispa</title>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./sistemas-distribuidos.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body class="pagina-materia materia-estructura-datos">
+  <nav class="navbar" aria-label="Navegación principal">
+    <a class="navbar-logo" href="../index.html">Justin Soledispa</a>
+
+    <div class="navbar-links">
+      <a href="../index.html">Inicio</a>
+      <a class="activo" href="../proyectos.html">Proyectos</a>
+      <a href="../logros.html">Logros</a>
+      <a href="../index.html#contacto">Contacto</a>
+      <a href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero hero-materia">
+    <div class="hero-layout">
+      <div class="hero-contenido">
+        <span class="hero-etiqueta" data-num="00">MATERIA</span>
+
+        <h1>Sistemas Distribuidos</h1>
+
+        <p class="hero-subtitulo">Proyectos de la materia</p>
+
+        <p class="hero-descripcion">
+          Página dedicada a los proyectos académicos desarrollados en Sistemas Distribuidos, con enfoque en contenedores, despliegue, comunicación entre servicios, redes privadas y arquitectura distribuida.
+        </p>
+
+        <div class="hero-acciones">
+          <a class="boton-ver-proyectos" href="#proyectos">Ver proyectos</a>
+          <a class="boton-secundario" href="../proyectos.html">Volver a proyectos</a>
+        </div>
+      </div>
+
+      <aside class="panel-info panel-resumen" aria-label="Resumen de Sistemas Distribuidos">
+        <div class="resumen-item">
+          <span class="resumen-numero">2</span>
+          <span class="resumen-texto">proyectos registrados</span>
+        </div>
+
+        <div class="resumen-item">
+          <span class="resumen-numero">Docker</span>
+          <span class="resumen-texto">Tailscale y servicios</span>
+        </div>
+
+        <div class="resumen-item">
+          <span class="resumen-numero">2026-1</span>
+          <span class="resumen-texto">periodo académico</span>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section id="proyectos" class="seccion-proyectos seccion-amplia" aria-labelledby="titulo-proyectos">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion" data-num="01">PROYECTOS</span>
+        <h2 id="titulo-proyectos">Proyectos desarrollados</h2>
+        <p>
+          Proyectos académicos para documentar prácticas de despliegue, servicios distribuidos y orquestación.
+        </p>
+      </div>
+
+      <div class="grid-materias grid-proyectos grid-proyectos-doble">
+        <article class="tarjeta-materia tarjeta-proyecto tarjeta-proyecto-edd">
+          <img class="thumbnail-proyecto" src="../img/proyectos/ferrecontrol/thumbnail.png" alt="Vista previa de FerreControl">
+          <div class="materia-header">
+            <span class="badge badge-finalizado">Finalizado</span>
+            <h3>FerreControl</h3>
+          </div>
+
+          <p>
+            Sistema distribuido para gestionar inventario de una ferretería. La aplicación web en Express y EJS se conecta a MySQL mediante una red privada Tailscale y coordina un sistema de reportes en un contenedor independiente.
+          </p>
+
+          <div class="aporte-proyecto">
+            <strong>Mi aporte:</strong> aplicación de inventario con Express/EJS, conexión MySQL, Docker y comunicación privada mediante Tailscale.
+          </div>
+
+          <ul class="lista-tecnologias lista-proyecto">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>EJS</li>
+            <li>MySQL</li>
+            <li>Docker</li>
+            <li>Tailscale</li>
+          </ul>
+
+          <a
+            class="boton-ver-proyectos"
+            href="https://github.com/justinsoledispa/ferrecontrol-docker-app"
+            target="_blank"
+            rel="noopener noreferrer">
+            Ver repositorio
+          </a>
+        </article>
+
+        <article class="tarjeta-materia tarjeta-proyecto tarjeta-proyecto-edd">
+          <div class="materia-header">
+            <span class="badge badge-pendiente">Pendiente</span>
+            <h3>Kubernetes</h3>
+          </div>
+
+          <p>
+            Espacio reservado para prácticas de orquestación, pods, servicios, escalamiento y despliegue declarativo.
+          </p>
+
+          <div class="aporte-proyecto">
+            <strong>Mi aporte:</strong> pendiente de documentar junto con el avance del proyecto.
+          </div>
+
+          <ul class="lista-tecnologias lista-proyecto">
+            <li>Pods</li>
+            <li>Services</li>
+            <li>Deployments</li>
+            <li>Escalamiento</li>
+          </ul>
+
+          <span class="boton-secundario">Próximamente</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="estructuras" class="seccion-info seccion-amplia" aria-labelledby="titulo-estructuras">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion" data-num="02">CONCEPTOS</span>
+        <h2 id="titulo-estructuras">Conceptos aplicados</h2>
+        <p>
+          Conceptos principales previstos para los proyectos de la materia.
+        </p>
+      </div>
+
+      <div class="grid-tecnologias grid-estructuras">
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Contenedores</h3>
+          <ul class="lista-tecnologias">
+            <li>Imágenes</li>
+            <li>Volúmenes</li>
+            <li>Redes</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Servicios</h3>
+          <ul class="lista-tecnologias">
+            <li>APIs</li>
+            <li>Puertos</li>
+            <li>Reportes</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Orquestación</h3>
+          <ul class="lista-tecnologias">
+            <li>Pods</li>
+            <li>Deployments</li>
+            <li>Servicios</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Escalabilidad</h3>
+          <ul class="lista-tecnologias">
+            <li>Réplicas</li>
+            <li>Balanceo</li>
+            <li>Tailscale</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="seccion-info seccion-amplia" aria-labelledby="titulo-tecnologias">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion" data-num="03">TECNOLOGÍAS</span>
+        <h2 id="titulo-tecnologias">Tecnologías y funcionamiento</h2>
+        <p>
+          Herramientas y enfoques comunes para construir, ejecutar y organizar los proyectos de la materia.
+        </p>
+      </div>
+
+      <div class="grid-tecnologias grid-funcionamiento">
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Aplicación</h3>
+          <ul class="lista-tecnologias">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>EJS</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Datos y red</h3>
+          <ul class="lista-tecnologias">
+            <li>MySQL 8</li>
+            <li>mysql2</li>
+            <li>Tailscale</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Arquitectura</h3>
+          <ul class="lista-tecnologias">
+            <li>Microservicios</li>
+            <li>Docker</li>
+            <li>Compose</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion-info seccion-volver" aria-label="Volver al portafolio">
+      <div class="panel-info panel-contacto">
+        <span class="etiqueta-seccion" data-num="04">REGRESO</span>
+        <h2>Volver al portafolio</h2>
+        <p>
+          Regresa al listado general de materias y proyectos académicos.
+        </p>
+
+        <a class="boton-contacto" href="../proyectos.html">← Volver a proyectos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Justin Soledispa.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

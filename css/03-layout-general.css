@@ -1,0 +1,80 @@
+/* =========================================================
+   3. LAYOUT GENERAL
+   ========================================================= */
+
+main {
+  width: min(var(--max-width), calc(100% - 2rem));
+  margin: 0 auto;
+  counter-reset: section-counter;
+}
+
+.seccion-info,
+.seccion-proyectos {
+  width: 100%;
+}
+
+.seccion-amplia {
+  min-height: 74vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5.5rem 0;
+  border-bottom: 1px solid var(--line);
+  counter-increment: section-counter;
+}
+
+.encabezado-seccion {
+  max-width: 880px;
+  margin: 0 0 2.4rem;
+  text-align: left;
+}
+
+.etiqueta-seccion::before {
+  content: counter(section-counter, decimal-leading-zero) " /";
+  margin-right: 0.7rem;
+  color: var(--cyan);
+}
+
+h2,
+h3 {
+  font-family: var(--font-heavy);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h2 {
+  max-width: 900px;
+  margin-top: 0.9rem;
+  margin-bottom: 1.1rem;
+  color: var(--violet);
+  font-size: clamp(2.2rem, 5.8vw, 4.8rem);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+}
+
+h3 {
+  color: var(--text);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.encabezado-seccion p,
+.panel-destacado p,
+.tarjeta-certificacion p,
+.tarjeta-contacto p,
+.panel-info p {
+  color: var(--muted);
+}
+
+.encabezado-seccion p {
+  max-width: 760px;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.layout-dos-columnas {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+  gap: 2rem;
+  align-items: stretch;
+}

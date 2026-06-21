@@ -1,0 +1,145 @@
+/* =========================================================
+   ESTRUCTURA DE DATOS - AJUSTES ESPECÍFICOS
+   Hereda la estética global desde ../style.css
+   ========================================================= */
+
+/* =========================================================
+   1. HERO DE MATERIA
+   ========================================================= */
+.hero-etiqueta,
+.etiqueta-seccion {
+  color: var(--lime);
+}
+
+.hero-etiqueta[data-num]::before,
+.etiqueta-seccion[data-num]::before {
+  content: attr(data-num) " / ";
+  color: var(--cyan);
+  margin-right: 0.7rem;
+}
+.materia-estructura-datos .hero h1 {
+  max-width: 980px;
+}
+
+.materia-estructura-datos .hero-descripcion {
+  max-width: 720px;
+}
+
+/* =========================================================
+   2. PROYECTOS
+   ========================================================= */
+
+.materia-estructura-datos .grid-proyectos-doble {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.materia-estructura-datos .tarjeta-proyecto-edd {
+  min-height: 420px;
+  gap: 1.25rem;
+}
+
+.materia-estructura-datos .tarjeta-proyecto-edd .materia-header {
+  margin-bottom: 0;
+}
+
+.materia-estructura-datos .tarjeta-proyecto-edd h3 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.materia-estructura-datos .tarjeta-proyecto-edd p {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.materia-estructura-datos .lista-proyecto {
+  margin-top: auto;
+  margin-bottom: 0.25rem;
+}
+
+.materia-estructura-datos .tarjeta-proyecto-edd .boton-ver-proyectos {
+  width: fit-content;
+  max-width: max-content;
+  align-self: flex-start;
+  padding-inline: 1.4rem;
+}
+
+/* =========================================================
+   3. ESTRUCTURAS APLICADAS
+   ========================================================= */
+
+.materia-estructura-datos .grid-estructuras {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.materia-estructura-datos .grid-estructuras .tarjeta-tecnologia {
+  min-height: 245px;
+}
+
+.materia-estructura-datos .grid-estructuras .tarjeta-tecnologia h3 {
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+}
+
+/* =========================================================
+   4. TECNOLOGÍAS Y FUNCIONAMIENTO
+   ========================================================= */
+
+.materia-estructura-datos .grid-funcionamiento {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.materia-estructura-datos .grid-funcionamiento .tarjeta-tecnologia {
+  min-height: 220px;
+}
+
+/* =========================================================
+   5. REGRESO
+   ========================================================= */
+
+.materia-estructura-datos .seccion-volver {
+  padding: 4.5rem 0;
+}
+
+.materia-estructura-datos .seccion-volver .panel-contacto {
+  max-width: 100%;
+}
+
+.materia-estructura-datos .seccion-volver .boton-contacto {
+  width: fit-content;
+  max-width: max-content;
+  padding-inline: 1.4rem;
+}
+
+/* =========================================================
+   6. RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .materia-estructura-datos .grid-estructuras {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .materia-estructura-datos .grid-proyectos-doble,
+  .materia-estructura-datos .grid-funcionamiento {
+    grid-template-columns: 1fr;
+  }
+
+  .materia-estructura-datos .tarjeta-proyecto-edd {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .materia-estructura-datos .grid-estructuras {
+    grid-template-columns: 1fr;
+  }
+
+  .materia-estructura-datos .tarjeta-proyecto-edd .boton-ver-proyectos,
+  .materia-estructura-datos .seccion-volver .boton-contacto {
+    width: 100%;
+    max-width: none;
+  }
+}

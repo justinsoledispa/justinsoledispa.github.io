@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyectos académicos de Base de Datos I de Justin Soledispa.">
+  <title>Base de Datos I | Justin Soledispa</title>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./base-datos-i.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+  <nav class="navbar" aria-label="Navegación principal">
+    <a class="navbar-logo" href="../index.html">Justin Soledispa</a>
+
+    <div class="navbar-links">
+      <a href="../index.html">Inicio</a>
+      <a class="activo" href="../proyectos.html">Proyectos</a>
+      <a href="../logros.html">Logros</a>
+      <a href="../index.html#contacto">Contacto</a>
+      <a href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero hero-materia">
+    <div class="hero-layout">
+      <div class="hero-contenido">
+        <span class="hero-etiqueta" data-num="00">MATERIA</span>
+
+        <h1>Base de Datos I</h1>
+
+        <p class="hero-subtitulo">Proyectos de la materia</p>
+
+        <p class="hero-descripcion">
+          Página dedicada al proyecto académico desarrollado en Base de Datos I, con enfoque en modelado, diseño relacional, SQL y organización de información.
+        </p>
+
+        <div class="hero-acciones">
+          <a class="boton-ver-proyectos" href="#proyectos">Ver proyectos</a>
+          <a class="boton-secundario" href="../proyectos.html">Volver a proyectos</a>
+        </div>
+      </div>
+
+      <aside class="panel-info panel-resumen" aria-label="Resumen de Base de Datos I">
+        <div class="resumen-item">
+          <span class="resumen-numero">1</span>
+          <span class="resumen-texto">proyecto registrado</span>
+        </div>
+
+        <div class="resumen-item">
+          <span class="resumen-numero">SQL</span>
+          <span class="resumen-texto">tecnología principal</span>
+        </div>
+
+        <div class="resumen-item">
+          <span class="resumen-numero">2025-2</span>
+          <span class="resumen-texto">periodo académico</span>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section id="proyectos" class="seccion-proyectos seccion-amplia" aria-labelledby="titulo-proyectos">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion" data-num="01">PROYECTOS</span>
+        <h2 id="titulo-proyectos">Proyectos desarrollados</h2>
+        <p>
+          Repositorio asociado a la materia Base de Datos I.
+        </p>
+      </div>
+
+      <div class="grid-materias grid-proyectos">
+        <article class="tarjeta-materia tarjeta-proyecto">
+          <img class="thumbnail-proyecto" src="../img/proyectos/atrium/thumbnail.png" alt="Vista previa de ATRIUM">
+          <div class="materia-header">
+            <span class="badge badge-finalizado">Finalizado</span>
+            <h3>ATRIUM: Centro de Emprendimiento</h3>
+          </div>
+
+          <p>
+            Aplicación JavaFX conectada a PostgreSQL mediante JDBC, diseñada para gestionar eventos, emprendimientos, mentorías, carga masiva desde Excel y reportes exportables a PDF.
+          </p>
+
+          <div class="aporte-proyecto">
+            <strong>Mi aporte:</strong> arquitectura Java, conexión con PostgreSQL y generación de PDFs de los reportes.
+          </div>
+
+          <a 
+            class="boton-ver-proyectos" 
+            href="https://github.com/juandifrost17/proyecto_bd1_atrium" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            Ver repositorio
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="temas" class="seccion-info seccion-amplia" aria-labelledby="titulo-temas">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion" data-num="02">TEMAS</span>
+        <h2 id="titulo-temas">Temas aplicados</h2>
+        <p>
+          Conceptos trabajados durante el desarrollo de los proyectos de la materia.
+        </p>
+      </div>
+
+      <div class="grid-tecnologias">
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Modelado</h3>
+          <ul class="lista-tecnologias">
+            <li>3FN</li>
+            <li>Modelo relacional</li>
+            <li>Relaciones N:M</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+  <h3>Backend BD</h3>
+  <ul class="lista-tecnologias">
+    <li>PostgreSQL</li>
+    <li>Stored functions</li>
+    <li>Transacciones ACID</li>
+  </ul>
+</article>
+
+        <article class="panel-info tarjeta-tecnologia">
+  <h3>Aplicación</h3>
+  <ul class="lista-tecnologias">
+    <li>JavaFX</li>
+    <li>JDBC</li>
+    <li>DAO + DTO</li>
+  </ul>
+</article>
+
+<article class="panel-info tarjeta-tecnologia">
+  <h3>Reportes</h3>
+  <ul class="lista-tecnologias">
+    <li>PDF</li>
+    <li>iText</li>
+    <li>Excel</li>
+    <li>Apache POI</li>
+  </ul>
+</article>
+
+      </div>
+    </section>
+
+    <section class="seccion-info seccion-volver" aria-label="Volver al portafolio">
+      <div class="panel-info panel-contacto">
+        <span class="etiqueta-seccion" data-num="03">REGRESO</span>
+        <h2>Volver al portafolio</h2>
+        <p>
+          Regresa al listado general de materias y proyectos académicos.
+        </p>
+
+        <a class="boton-contacto" href="../proyectos.html">← Volver a proyectos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Justin Soledispa.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

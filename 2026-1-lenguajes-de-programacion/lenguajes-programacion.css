@@ -1,0 +1,199 @@
+/* =========================================================
+   LENGUAJES DE PROGRAMACIÓN - AJUSTES ESPECÍFICOS
+   Hereda la estética global desde ../style.css
+   ========================================================= */
+
+/* =========================================================
+   1. LABELS Y HERO DE MATERIA
+   ========================================================= */
+
+.materia-lenguajes-programacion .hero-etiqueta,
+.materia-lenguajes-programacion .etiqueta-seccion {
+  color: var(--lime);
+}
+
+.materia-lenguajes-programacion .hero-etiqueta[data-num]::before,
+.materia-lenguajes-programacion .etiqueta-seccion[data-num]::before {
+  content: attr(data-num) " / ";
+  color: var(--cyan);
+  margin-right: 0.7rem;
+}
+
+.materia-lenguajes-programacion .hero h1 {
+  max-width: 940px;
+  font-size: clamp(2.6rem, 5.1vw, 4.85rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.materia-lenguajes-programacion .hero-descripcion {
+  max-width: 720px;
+}
+
+/* =========================================================
+   2. PROYECTOS
+   ========================================================= */
+
+.materia-lenguajes-programacion .grid-proyectos {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.materia-lenguajes-programacion .tarjeta-proyecto {
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.15rem;
+}
+
+.materia-lenguajes-programacion .tarjeta-proyecto .materia-header {
+  margin-bottom: 0;
+}
+
+.materia-lenguajes-programacion .tarjeta-proyecto h3 {
+  font-size: clamp(1.85rem, 3.2vw, 2.65rem);
+  line-height: 1.03;
+  letter-spacing: -0.04em;
+}
+
+.materia-lenguajes-programacion .tarjeta-proyecto p {
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+/* Chips dentro de cada proyecto */
+.materia-lenguajes-programacion .lista-proyecto {
+  margin-top: auto;
+  margin-bottom: 1.45rem;
+  gap: 0.7rem;
+}
+
+.materia-lenguajes-programacion .lista-proyecto li {
+  font-size: 0.78rem;
+}
+
+/* Botón del proyecto: corto, alineado y con aire respecto a los chips */
+.materia-lenguajes-programacion .tarjeta-proyecto .boton-ver-proyectos,
+.materia-lenguajes-programacion .tarjeta-proyecto .boton-secundario {
+  width: fit-content;
+  max-width: max-content;
+  align-self: flex-start;
+  margin-top: 0;
+  padding-inline: 1.4rem;
+}
+
+/* El botón de la tarjeta pendiente no debe parecer un enlace activo */
+.materia-lenguajes-programacion .tarjeta-proyecto .boton-secundario {
+  cursor: default;
+}
+
+.materia-lenguajes-programacion .tarjeta-proyecto .badge-pendiente ~ h3 {
+  color: var(--muted);
+}
+
+/* Mantiene el hover aunque script.js haya añadido reveal/is-visible */
+.materia-lenguajes-programacion .tarjeta-proyecto.reveal.is-visible:hover {
+  transform: translateY(-10px);
+}
+
+/* =========================================================
+   3. CONCEPTOS APLICADOS
+   ========================================================= */
+
+.materia-lenguajes-programacion #conceptos .grid-tecnologias {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.materia-lenguajes-programacion #conceptos .tarjeta-tecnologia {
+  min-height: 225px;
+}
+
+.materia-lenguajes-programacion #conceptos .tarjeta-tecnologia h3 {
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+}
+
+/* =========================================================
+   4. TECNOLOGÍAS Y FUNCIONAMIENTO
+   ========================================================= */
+
+.materia-lenguajes-programacion #tecnologias .grid-tecnologias {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.materia-lenguajes-programacion #tecnologias .tarjeta-tecnologia {
+  min-height: 220px;
+}
+
+.materia-lenguajes-programacion #tecnologias .tarjeta-tecnologia h3 {
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+}
+
+/* =========================================================
+   5. REGRESO
+   ========================================================= */
+
+.materia-lenguajes-programacion .seccion-volver {
+  padding: 4.5rem 0;
+}
+
+.materia-lenguajes-programacion .seccion-volver .panel-contacto {
+  max-width: 100%;
+}
+
+.materia-lenguajes-programacion .seccion-volver .boton-contacto {
+  width: fit-content;
+  max-width: max-content;
+  padding-inline: 1.4rem;
+}
+
+/* =========================================================
+   6. RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1180px) {
+  .materia-lenguajes-programacion .grid-proyectos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .materia-lenguajes-programacion #tecnologias .grid-tecnologias {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .materia-lenguajes-programacion .grid-proyectos,
+  .materia-lenguajes-programacion #conceptos .grid-tecnologias {
+    grid-template-columns: 1fr;
+  }
+
+  .materia-lenguajes-programacion .tarjeta-proyecto {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .materia-lenguajes-programacion .hero h1 {
+    font-size: clamp(2.4rem, 13vw, 4rem);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+  }
+
+  .materia-lenguajes-programacion #tecnologias .grid-tecnologias {
+    grid-template-columns: 1fr;
+  }
+
+  .materia-lenguajes-programacion .tarjeta-proyecto .boton-ver-proyectos,
+  .materia-lenguajes-programacion .tarjeta-proyecto .boton-secundario,
+  .materia-lenguajes-programacion .seccion-volver .boton-contacto {
+    width: 100%;
+    max-width: none;
+  }
+
+  .materia-lenguajes-programacion .lista-proyecto {
+    margin-bottom: 1.25rem;
+  }
+}

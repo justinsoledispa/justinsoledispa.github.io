@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio académico de Justin Soledispa. Proyectos universitarios, tecnologías, logros y contacto.">
+  <title>Portafolio Académico | Justin Soledispa</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+  <nav class="navbar" aria-label="Navegación principal">
+    <a class="navbar-logo" href="index.html">Justin Soledispa</a>
+    <div class="navbar-links">
+      <a class="activo" href="index.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="logros.html">Logros</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero">
+    <div class="hero-layout">
+      <div class="hero-contenido">
+        <span class="hero-etiqueta">Historial académico</span>
+        <h1>Portafolio de Proyectos</h1>
+        <p class="hero-subtitulo">Justin Soledispa | UEES</p>
+        <p class="hero-descripcion">
+          Espacio personal donde organizo mi avance universitario en programación, bases de datos, estructuras de datos, sistemas y tecnologías aplicadas.
+        </p>
+        <div class="hero-acciones">
+          <a class="boton-ver-proyectos" href="proyectos.html">Ver proyectos</a>
+          <a class="boton-secundario" href="#contacto">Contacto</a>
+        </div>
+      </div>
+
+      <aside class="panel-info panel-resumen" aria-label="Resumen del portafolio">
+        <div class="resumen-item">
+          <span class="resumen-numero">5</span>
+          <span class="resumen-texto">materias organizadas</span>
+        </div>
+        <div class="resumen-item">
+          <span class="resumen-numero">2025 - 2026</span>
+          <span class="resumen-texto">periodos académicos</span>
+        </div>
+        <div class="resumen-item">
+          <span class="resumen-numero">GitHub</span>
+          <span class="resumen-texto">repositorios públicos</span>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section id="acerca" class="seccion-info seccion-amplia" aria-labelledby="titulo-acerca">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion">Perfil</span>
+        <h2 id="titulo-acerca">Acerca de mí</h2>
+      </div>
+
+      <div class="panel-destacado">
+        <h3>Construyendo soluciones con datos y software</h3>
+        <p>
+          Este portafolio reúne proyectos académicos donde aplico programación, bases de datos y estructuras de datos para resolver problemas concretos: gestionar eventos, analizar información, crear reportes, organizar contactos y construir interfaces funcionales.
+        </p>
+      </div>
+    </section>
+
+    <section id="destacados" class="seccion-proyectos seccion-amplia" aria-labelledby="titulo-destacados">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion">Resumen académico</span>
+        <h2 id="titulo-destacados">Proyectos destacados</h2>
+        <p>
+          Una vista rápida de algunos trabajos representativos del portafolio. La colección completa está organizada por materia.
+        </p>
+        <div class="hero-acciones">
+          <a class="boton-ver-proyectos" href="proyectos.html">Ver todos los proyectos</a>
+        </div>
+      </div>
+
+      <div class="grid-materias">
+        <article class="tarjeta-materia">
+          <img class="thumbnail-proyecto" src="img/proyectos/enreach/thumbnail.png" alt="Vista previa de Enreach">
+          <div class="materia-header">
+            <span class="badge badge-finalizado">Base de Datos II</span>
+            <h3>ENREACH DW/BI</h3>
+          </div>
+          <p>
+            Data Warehouse, ETL, modelo dimensional y dashboards analíticos para el sistema Enreach.
+          </p>
+          <div class="aporte-proyecto">
+            <strong>Mi aporte:</strong> desarrollo de la Vista Partner, reportes analíticos, consultas SQL y conexión de datos para el dashboard.
+          </div>
+          <ul class="lista-tecnologias">
+      <li>Modelo Kimball</li>
+      <li>PostgreSQL</li>
+      <li>Pentaho Spoon</li>
+      <li>React</li>
+    </ul>
+          <a class="boton-ver-proyectos" href="https://github.com/juandifrost17/proyecto_bd2_enreach">Ver repositorio</a>
+        </article>
+
+        <article class="tarjeta-materia">
+          <img class="thumbnail-proyecto" src="img/proyectos/stadpass/thumbnail.png" alt="Vista previa de StadPass">
+          <div class="materia-header">
+            <span class="badge badge-finalizado">Lenguajes de Programación</span>
+            <h3>StadPass</h3>
+          </div>
+          <p>
+            Sistema de acreditación y control de acceso a estadios con roles, credenciales digitales y validación por zona.
+          </p>
+          <div class="aporte-proyecto">
+            <strong>Mi aporte:</strong> módulo de operador, usuario final, emisión de credenciales, simulación de acceso y reportes.
+          </div>
+             <ul class="lista-tecnologias">
+      <li>Laravel + PHP</li>
+      <li>Middleware</li>
+      <li>Bootstrap</li>
+      <li>MySQL</li>
+    </ul>
+          <a class="boton-ver-proyectos" href="https://github.com/justinsoledispa/acceso-estadio-laravel">Ver repositorio</a>
+        </article>
+
+        <article class="tarjeta-materia">
+          <img class="thumbnail-proyecto" src="img/proyectos/ferrecontrol/thumbnail.png" alt="Vista previa de FerreControl">
+          <div class="materia-header">
+            <span class="badge badge-finalizado">Sistemas Distribuidos</span>
+            <h3>FerreControl</h3>
+          </div>
+          <p>
+            Sistema distribuido de inventario para ferretería con Node.js, MySQL, Docker y comunicación privada mediante Tailscale.
+          </p>
+          <div class="aporte-proyecto">
+            <strong>Mi aporte:</strong> aplicación de inventario con Express/EJS, conexión MySQL, Docker y comunicación privada mediante Tailscale.
+          </div>
+             <ul class="lista-tecnologias">
+      <li>Tailscale</li>
+      <li>Node.js</li>
+      <li>Docker</li>
+      <li>Express</li>
+    </ul>
+          <a
+            class="boton-ver-proyectos"
+            href="https://github.com/justinsoledispa/ferrecontrol-docker-app"
+            target="_blank"
+            rel="noopener noreferrer">
+            Ver repositorio
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="seccion-info seccion-amplia" aria-labelledby="titulo-tecnologias">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion">Stack tecnológico</span>
+        <h2 id="titulo-tecnologias">Tecnologías</h2>
+        <p>
+          Herramientas, lenguajes y tecnologías utilizadas en los proyectos del portafolio.
+        </p>
+      </div>
+
+      <div class="grid-tecnologias">
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Desarrollo web</h3>
+          <ul class="lista-tecnologias">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Laravel</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>EJS</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Programación</h3>
+          <ul class="lista-tecnologias">
+            <li>Java</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>Prolog</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Bases de datos</h3>
+          <ul class="lista-tecnologias">
+            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>ETL</li>
+            <li>mysql2</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Herramientas</h3>
+          <ul class="lista-tecnologias">
+            <li>GitHub</li>
+            <li>Pentaho</li>
+            <li>AWS</li>
+            <li>Docker</li>
+            <li>Tailscale</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion-info seccion-amplia seccion-contacto-final" aria-labelledby="titulo-contacto">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion">Contacto</span>
+        <h2 id="titulo-contacto">Conecta conmigo</h2>
+        <p>
+          Accesos rápidos para revisar mis proyectos, credenciales y canales de contacto.
+        </p>
+      </div>
+
+      <div class="grid-contacto">
+        <article class="tarjeta-contacto">
+          <h3>GitHub</h3>
+          <p>Repositorios y proyectos académicos organizados por materia.</p>
+          <a class="boton-contacto" href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">Ir a GitHub</a>
+        </article>
+
+        <article class="tarjeta-contacto">
+          <h3>Credly</h3>
+          <p>Credenciales y certificaciones verificables.</p>
+          <a class="boton-contacto" href="https://www.credly.com/badges/378b0291-0039-4906-811d-ae0c5f3f1b5c/public_url" target="_blank" rel="noopener noreferrer">Ver credencial</a>
+        </article>
+
+        <article class="tarjeta-contacto">
+          <h3>Correo</h3>
+          <p>Contacto académico o profesional.</p>
+          <a class="boton-contacto" href="mailto:jasoledispa@uees.edu.ec">Enviar correo</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Justin Soledispa.</p>
+  </footer>
+  <script src="./script.js"></script>
+  <div class="custom-cursor" aria-hidden="true"></div>
+</body>
+</html>

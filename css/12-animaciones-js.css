@@ -1,0 +1,19 @@
+/* =========================================================
+   11. SOPORTE PARA SCRIPT.JS
+   ========================================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tarjeta-materia.reveal.is-visible:hover,
+.panel-info.reveal.is-visible:hover {
+  transform: translateY(-10px);
+}

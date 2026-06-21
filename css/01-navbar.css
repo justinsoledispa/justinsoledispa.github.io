@@ -1,0 +1,101 @@
+/* =========================================================
+   1. NAVBAR
+   ========================================================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  min-height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: var(--bg);
+  border-bottom: 2px solid var(--cyan);
+}
+
+.navbar::after {
+  display: none;
+  content: "";
+  position: absolute;
+  right: 2rem;
+  bottom: 0.85rem;
+  width: min(18vw, 340px);
+  height: 16px;
+  background: var(--violet);
+}
+
+.navbar-logo {
+  position: relative;
+  z-index: 1;
+  color: var(--text);
+  font-family: var(--font-heavy);
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.navbar-logo::before {
+  content: "// ";
+  color: var(--cyan);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+}
+
+.navbar-links {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.navbar-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0.35rem 0.55rem;
+  color: var(--muted);
+  border: 1px solid transparent;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.16s ease, border-color 0.16s ease, background-color 0.16s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus-visible {
+  color: var(--cyan);
+  background: var(--panel);
+  border-color: var(--cyan);
+  outline: none;
+}
+
+.navbar-links a.activo {
+  color: var(--cyan);
+}
+
+.navbar-links a.activo::before {
+  content: "[ ";
+  color: var(--violet);
+}
+
+.navbar-links a.activo::after {
+  content: " ]";
+  color: var(--violet);
+}

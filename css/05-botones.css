@@ -1,0 +1,75 @@
+/* =========================================================
+   5. BOTONES Y ENLACES DE ACCIÓN
+   ========================================================= */
+
+.boton-ver-proyectos,
+.boton-contacto,
+.boton-secundario {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 0.16s ease, background-color 0.16s ease, color 0.16s ease, border-color 0.16s ease;
+}
+
+.boton-ver-proyectos,
+.boton-contacto {
+  color: var(--text);
+  background: var(--violet);
+  border: 2px solid var(--violet);
+}
+
+.boton-secundario {
+  color: var(--cyan);
+  background: transparent;
+  border: 2px solid var(--cyan);
+}
+
+.boton-ver-proyectos::before,
+.boton-contacto::before,
+.boton-secundario::before {
+  content: "[";
+  margin-right: 0.25rem;
+}
+
+.boton-ver-proyectos::after,
+.boton-contacto::after,
+.boton-secundario::after {
+  content: "]";
+  margin-left: 0.25rem;
+}
+
+.boton-ver-proyectos:hover,
+.boton-contacto:hover,
+.boton-secundario:hover,
+.boton-ver-proyectos:focus-visible,
+.boton-contacto:focus-visible,
+.boton-secundario:focus-visible {
+  transform: translate(-4px, -4px);
+  outline: none;
+}
+
+.boton-ver-proyectos:hover,
+.boton-contacto:hover,
+.boton-ver-proyectos:focus-visible,
+.boton-contacto:focus-visible {
+  color: var(--bg);
+  background: var(--cyan);
+  border-color: var(--cyan);
+}
+
+.boton-secundario:hover,
+.boton-secundario:focus-visible {
+  color: var(--text);
+  background: var(--violet);
+  border-color: var(--violet);
+}
