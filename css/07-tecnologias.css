@@ -50,3 +50,98 @@
   margin-right: 0.2rem;
   color: var(--violet);
 }
+
+.stack-tecnico {
+  display: grid;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-top: 4px solid var(--cyan);
+  border-bottom: 4px solid var(--violet);
+}
+
+.stack-capa {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.5rem 1.8rem;
+  border-bottom: 1px solid var(--line-strong);
+  transition: background-color 0.18s ease, transform 0.18s ease;
+}
+
+.stack-capa:last-child {
+  border-bottom: none;
+}
+
+.stack-capa:hover {
+  background: var(--panel-alt);
+}
+
+.stack-capa-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stack-capa-numero {
+  color: var(--violet);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.stack-capa-numero::before {
+  content: "// ";
+  color: var(--cyan);
+}
+
+.stack-capa h3 {
+  color: var(--text);
+  font-size: clamp(1.15rem, 2.4vw, 1.7rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.stack-capa-lista {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.stack-capa-lista li {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0.45rem 0.7rem;
+  color: var(--cyan);
+  background: var(--bg);
+  border: 1px solid var(--line-strong);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.stack-capa-lista li::before {
+  content: "#";
+  margin-right: 0.2rem;
+  color: var(--violet);
+}
+
+@media (max-width: 760px) {
+  .stack-capa {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+
+  .stack-capa-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}

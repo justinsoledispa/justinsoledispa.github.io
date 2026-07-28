@@ -4,12 +4,12 @@
 
 .grid-certificaciones {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr));
   gap: 1.5rem;
 }
 
 .tarjeta-certificacion {
-  width: min(760px, 100%);
+  width: 100%;
   margin: 0;
   border-left-color: var(--violet);
   transition:
@@ -48,6 +48,12 @@
 .tarjeta-certificacion p {
   margin-bottom: 1.4rem;
   line-height: 1.75;
+}
+
+.certificacion-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .certificacion-imagen {
