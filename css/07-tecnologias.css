@@ -1,7 +1,4 @@
-/* =========================================================
-   7. TECNOLOGÍAS / CHIPS
-   ========================================================= */
-
+﻿
 .grid-tecnologias {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -20,6 +17,8 @@
   color: var(--text);
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   line-height: 1.08;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .lista-tecnologias {
@@ -36,13 +35,13 @@
   padding: 0.45rem 0.7rem;
   color: var(--cyan);
   background: var(--bg);
-  border: 1px solid var(--line-strong);
+  border: 1px solid var(--line);
   font-family: var(--font-mono);
   font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.03em;
   line-height: 1.2;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .lista-tecnologias li::before {
@@ -54,7 +53,7 @@
 .stack-tecnico {
   display: grid;
   background: var(--panel);
-  border: 1px solid var(--line-strong);
+  border: 1px solid var(--line);
   border-top: 4px solid var(--cyan);
   border-bottom: 4px solid var(--violet);
 }
@@ -84,7 +83,7 @@
 }
 
 .stack-capa-numero {
-  color: var(--violet);
+  color: var(--violet-light);
   font-family: var(--font-mono);
   font-size: 0.85rem;
   font-weight: 900;
@@ -100,7 +99,8 @@
   color: var(--text);
   font-size: clamp(1.15rem, 2.4vw, 1.7rem);
   line-height: 1.05;
-  text-transform: uppercase;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .stack-capa-lista {
@@ -117,13 +117,13 @@
   padding: 0.45rem 0.7rem;
   color: var(--cyan);
   background: var(--bg);
-  border: 1px solid var(--line-strong);
+  border: 1px solid var(--line);
   font-family: var(--font-mono);
   font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.03em;
   line-height: 1.2;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .stack-capa-lista li::before {
@@ -145,3 +145,4 @@
     gap: 0.4rem;
   }
 }
+

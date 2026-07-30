@@ -1,6 +1,3 @@
-/* =========================================================
-   3. LAYOUT GENERAL
-   ========================================================= */
 
 main {
   width: min(var(--max-width), calc(100% - 2rem));
@@ -46,7 +43,7 @@ h2 {
   max-width: 900px;
   margin-top: 0.9rem;
   margin-bottom: 1.1rem;
-  color: var(--violet);
+  color: var(--violet-light);
   font-size: clamp(2.2rem, 5.8vw, 4.8rem);
   line-height: 1.02;
   letter-spacing: -0.055em;
@@ -77,4 +74,21 @@ h3 {
   grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
   gap: 2rem;
   align-items: stretch;
+}
+
+.grid-metricas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.25rem;
+}
+
+.metrica-portafolio {
+  min-height: 220px;
+}
+
+.metrica-portafolio h3 {
+  margin: 0.9rem 0 0.65rem;
+  font-size: clamp(1.2rem, 2.3vw, 1.6rem);
+  text-transform: none;
+  letter-spacing: 0;
 }

@@ -14,12 +14,16 @@
   <nav class="navbar" aria-label="Navegación principal">
     <a class="navbar-logo" href="../index.html">Justin Soledispa</a>
 
-    <div class="navbar-links">
+    <button class="navbar-toggle" type="button" aria-controls="navbar-menu" aria-expanded="false" aria-label="Abrir menú de navegación">
+      <span class="navbar-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <div class="navbar-links" id="navbar-menu">
       <a href="../index.html">Inicio</a>
-      <a class="activo" href="../proyectos.html">Proyectos</a>
+      <a class="activo" href="../proyectos.html" aria-current="page">Proyectos</a>
       <a href="../logros.html">Logros</a>
       <a href="../index.html#contacto">Contacto</a>
       <a href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/justinsoledispa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
   </nav>
 
@@ -73,18 +77,29 @@
 
       <div class="grid-materias grid-proyectos">
         <article class="tarjeta-materia tarjeta-proyecto">
-          <img class="thumbnail-proyecto" src="../img/proyectos/laravel-prolog-rpg/thumbnail.png" alt="Vista previa de Laravel Prolog RPG">
+          <img class="thumbnail-proyecto" src="../img/proyectos/laravel-prolog-rpg/thumbnail.webp" alt="Vista previa de Laravel Prolog RPG" width="1892" height="858" loading="lazy">
           <div class="materia-header">
             <span class="badge badge-finalizado">Finalizado</span>
             <h3>Laravel Prolog RPG</h3>
           </div>
 
-          <p>
-            Simulador RPG web donde el usuario selecciona personaje, misión y enemigo. Laravel procesa el formulario, ejecuta una consulta en SWI-Prolog y muestra si el personaje cumple nivel, requisitos de inventario y resultado de combate.
-          </p>
-
-          <div class="aporte-proyecto">
-            <strong>Mi aporte:</strong> integración entre Laravel y Prolog, flujo de selección de misión y validación de reglas lógicas del simulador.
+          <div class="proyecto-detalle">
+            <div>
+              <h4>Problema abordado</h4>
+              <p>Validar decisiones de un RPG usando reglas lógicas en lugar de condicionales rígidos dentro del backend web.</p>
+            </div>
+            <div>
+              <h4>Solución desarrollada</h4>
+              <p>Simulador Laravel donde el usuario elige personaje, misión y enemigo; SWI-Prolog evalúa requisitos y resultado de combate.</p>
+            </div>
+            <div>
+              <h4>Mi aporte específico</h4>
+              <p>Integración Laravel + Prolog, flujo de selección de misión y validación de reglas lógicas del simulador.</p>
+            </div>
+            <div>
+              <h4>Resultado obtenido</h4>
+              <p>Aplicación web que demuestra programación lógica aplicada a decisiones interactivas y respuesta dinámica al usuario.</p>
+            </div>
           </div>
 
           <ul class="lista-tecnologias lista-proyecto">
@@ -99,23 +114,34 @@
             href="https://github.com/justinsoledispa/laravel-prolog-game-simulator" 
             target="_blank" 
             rel="noopener noreferrer">
-            Ver repositorio
+            Ver repositorio del equipo
           </a>
         </article>
 
         <article class="tarjeta-materia tarjeta-proyecto">
-          <img class="thumbnail-proyecto" src="../img/proyectos/stadpass/thumbnail.png" alt="Vista previa de StadPass">
+          <img class="thumbnail-proyecto" src="../img/proyectos/stadpass/thumbnail.webp" alt="Vista previa de StadPass" width="1917" height="902" loading="lazy">
           <div class="materia-header">
             <span class="badge badge-finalizado">Finalizado</span>
             <h3>StadPass</h3>
           </div>
 
-          <p>
-            Sistema de acreditación y control de acceso a estadios. Gestiona administradores, operadores y usuarios finales, emite credenciales digitales, valida puntos de acceso por zona y registra intentos aprobados o rechazados.
-          </p>
-
-          <div class="aporte-proyecto">
-            <strong>Mi aporte:</strong> módulo de operador, usuario final, emisión de credenciales, simulación de acceso y reportes.
+          <div class="proyecto-detalle">
+            <div>
+              <h4>Problema abordado</h4>
+              <p>Simular la acreditación y validación de acceso a estadios con reglas por partido, zona, punto de ingreso y tipo de credencial.</p>
+            </div>
+            <div>
+              <h4>Solución desarrollada</h4>
+              <p>Sistema Laravel con roles de administrador, operador y usuario final, credenciales digitales, middleware y registro de intentos.</p>
+            </div>
+            <div>
+              <h4>Mi aporte específico</h4>
+              <p>Módulos de operador y usuario final, emisión de credenciales, simulación de acceso y reportes.</p>
+            </div>
+            <div>
+              <h4>Resultado obtenido</h4>
+              <p>Flujo completo para emitir credenciales, aprobar o rechazar ingresos y consultar historial de intentos con métricas.</p>
+            </div>
           </div>
 
           <ul class="lista-tecnologias lista-proyecto">
@@ -131,34 +157,8 @@
             href="https://github.com/justinsoledispa/acceso-estadio-laravel" 
             target="_blank" 
             rel="noopener noreferrer">
-            Ver repositorio
+            Ver repositorio del equipo
           </a>
-        </article>
-
-        <article class="tarjeta-materia tarjeta-proyecto">
-          <div class="materia-header">
-            <span class="badge badge-pendiente">Pendiente</span>
-            <h3>Unity</h3>
-          </div>
-
-          <p>
-            Espacio reservado para el tercer proyecto de la materia.
-          </p>
-
-          <div class="aporte-proyecto">
-            <strong>Mi aporte:</strong> pendiente de documentar junto con el avance del proyecto.
-          </div>
-
-          <ul class="lista-tecnologias lista-proyecto">
-            <li>Videojuegos</li>
-            <li>Misiones</li>
-            <li>Niveles</li>
-            <li>Android Studio</li>
-          </ul>
-
-          <span class="boton-secundario">
-            Próximamente
-          </span>
         </article>
       </div>
     </section>
@@ -192,11 +192,11 @@
         </article>
 
         <article class="panel-info tarjeta-tecnologia">
-          <h3>Proyecto pendiente</h3>
+          <h3>Reglas de negocio</h3>
           <ul class="lista-tecnologias">
-            <li>Unity</li>
-            <li>Interacción</li>
-            <li>Simulación</li>
+            <li>Validaciones</li>
+            <li>Roles</li>
+            <li>Estados</li>
           </ul>
         </article>
       </div>

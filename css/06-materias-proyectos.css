@@ -1,12 +1,14 @@
-/* =========================================================
-   6. MATERIAS / PROYECTOS GENERALES
-   ========================================================= */
 
 .grid-materias {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   margin-top: 0.5rem;
+}
+
+.grid-proyectos {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr));
+  align-items: start;
 }
 
 .tarjeta-materia {
@@ -26,11 +28,12 @@
 
 .thumbnail-proyecto {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: auto;
   margin-bottom: 1.15rem;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   background: var(--bg);
-  border: 1px solid var(--line-strong);
+  border: 1px solid var(--line);
 }
 
 .aporte-proyecto {
@@ -49,10 +52,50 @@
   color: var(--cyan);
 }
 
+.proyecto-detalle {
+  display: grid;
+  gap: 1rem;
+  margin: 0.25rem 0 1.3rem;
+}
+
+.proyecto-detalle div {
+  padding-left: 0.85rem;
+  border-left: 2px solid var(--line-strong);
+}
+
+.proyecto-detalle h4 {
+  margin-bottom: 0.25rem;
+  color: var(--cyan);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+}
+
+.proyecto-detalle p,
+.tarjeta-materia > p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.tarjeta-proyecto .proyecto-detalle p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.proyecto-representativo {
+  margin: 1rem 0 1.3rem;
+}
+
+.proyecto-representativo strong {
+  color: var(--cyan);
+}
+
 .materia-header {
   padding-bottom: 1.1rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid var(--line-strong);
+  margin-bottom: 1.1rem;
+  border-bottom: 1px solid var(--line);
 }
 
 .materia-meta {
@@ -70,7 +113,7 @@
   font-family: var(--font-mono);
   font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.08em;
   line-height: 1.3;
   text-transform: uppercase;
 }
@@ -102,8 +145,8 @@
   gap: 1.5rem;
   padding: 1.4rem;
   background: var(--panel);
-  border: 1px solid var(--line-strong);
-  border-left: 6px solid var(--violet);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--violet);
 }
 
 .timeline-fecha {
@@ -112,11 +155,11 @@
   padding: 0.35rem 0.55rem;
   color: var(--lime);
   background: var(--bg);
-  border: 1px solid var(--cyan);
+  border: 1px solid var(--line-strong);
   font-family: var(--font-mono);
   font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.08em;
   line-height: 1.25;
   text-transform: uppercase;
 }

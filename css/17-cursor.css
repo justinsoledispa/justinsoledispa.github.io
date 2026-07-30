@@ -1,28 +1,15 @@
-/* =========================================================
-   CURSOR PERSONALIZADO
-   ========================================================= */
 
 @media (hover: hover) and (pointer: fine) {
-  body {
-    cursor: none;
-  }
-
-  a,
-  button,
-  .boton-ver-proyectos,
-  .boton-contacto,
-  .boton-secundario {
-    cursor: none;
-  }
-
   .custom-cursor {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
-    width: 42px;
-    height: 42px;
-    border: 2px solid var(--lime);
+    z-index: 999;
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(167, 139, 250, 0.5);
+    background: rgba(167, 139, 250, 0.08);
+    box-shadow: 0 0 28px rgba(76, 192, 207, 0.16);
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -35,25 +22,14 @@
   }
 
   .custom-cursor::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 8px;
-    height: 8px;
-    background: var(--lime);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
+    display: none;
   }
 
   .custom-cursor.is-hovering {
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
     border-color: var(--cyan);
-  }
-
-  .custom-cursor.is-hovering::after {
-    background: var(--cyan);
+    background: rgba(76, 192, 207, 0.1);
   }
 
   .custom-cursor.is-hidden {
@@ -62,6 +38,12 @@
 }
 
 @media (hover: none), (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
   .custom-cursor {
     display: none;
   }

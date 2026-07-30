@@ -12,12 +12,16 @@
 <body>
   <nav class="navbar" aria-label="Navegación principal">
     <a class="navbar-logo" href="index.html">Justin Soledispa</a>
-    <div class="navbar-links">
+    <button class="navbar-toggle" type="button" aria-controls="navbar-menu" aria-expanded="false" aria-label="Abrir menú de navegación">
+      <span class="navbar-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <div class="navbar-links" id="navbar-menu">
       <a href="index.html">Inicio</a>
-      <a class="activo" href="proyectos.html">Proyectos</a>
+      <a class="activo" href="proyectos.html" aria-current="page">Proyectos</a>
       <a href="logros.html">Logros</a>
       <a href="index.html#contacto">Contacto</a>
       <a href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/justinsoledispa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
   </nav>
 
@@ -42,12 +46,12 @@
           <span class="resumen-texto">materias</span>
         </div>
         <div class="resumen-item">
-          <span class="resumen-numero">9</span>
-          <span class="resumen-texto">proyectos y espacios</span>
+          <span class="resumen-numero">7</span>
+          <span class="resumen-texto">proyectos publicados</span>
         </div>
         <div class="resumen-item">
-          <span class="resumen-numero">2025 - 2026</span>
-          <span class="resumen-texto">periodos</span>
+          <span class="resumen-numero">6</span>
+          <span class="resumen-texto">proyectos grupales</span>
         </div>
       </aside>
     </div>
@@ -73,6 +77,10 @@
             </div>
             <h3>Base de Datos I</h3>
           </div>
+          <p>
+            Modelado relacional, normalización, consultas SQL, JDBC y reportes desde una aplicación de escritorio.
+          </p>
+          <p class="proyecto-representativo"><strong>Proyecto representativo:</strong> ATRIUM</p>
           <a class="boton-ver-proyectos" href="2025-2-base-de-datos-i/index.html">Ver proyectos</a>
         </article>
 
@@ -84,6 +92,10 @@
             </div>
             <h3>Base de Datos II</h3>
           </div>
+          <p>
+            Data Warehouse, ETL, modelo dimensional y consumo analítico mediante API y dashboards.
+          </p>
+          <p class="proyecto-representativo"><strong>Proyecto representativo:</strong> Enreach DW/BI</p>
           <a class="boton-ver-proyectos" href="2026-0-base-de-datos-ii/index.html">Ver proyectos</a>
         </article>
 
@@ -95,18 +107,11 @@
             </div>
             <h3>Estructura de Datos</h3>
           </div>
+          <p>
+            Estructuras personalizadas, búsqueda por prefijo, pilas, heaps, procesamiento de archivos y reportes.
+          </p>
+          <p class="proyecto-representativo"><strong>Proyecto representativo:</strong> Agenda</p>
           <a class="boton-ver-proyectos" href="2026-0-estructura-de-datos/index.html">Ver proyectos</a>
-        </article>
-
-        <article class="tarjeta-materia">
-          <div class="materia-header">
-            <div class="materia-meta">
-              <span class="semestre">2026-1</span>
-              <span class="badge badge-contador">3 proyectos</span>
-            </div>
-            <h3>Lenguajes de Programación</h3>
-          </div>
-          <a class="boton-ver-proyectos" href="2026-1-lenguajes-de-programacion/index.html">Ver proyectos</a>
         </article>
 
         <article class="tarjeta-materia">
@@ -115,8 +120,27 @@
               <span class="semestre">2026-1</span>
               <span class="badge badge-contador">2 proyectos</span>
             </div>
+            <h3>Lenguajes de Programación</h3>
+          </div>
+          <p>
+            Integración de Laravel, PHP, Prolog, Blade, roles, reglas lógicas y validaciones de negocio.
+          </p>
+          <p class="proyecto-representativo"><strong>Proyecto representativo:</strong> StadPass</p>
+          <a class="boton-ver-proyectos" href="2026-1-lenguajes-de-programacion/index.html">Ver proyectos</a>
+        </article>
+
+        <article class="tarjeta-materia">
+          <div class="materia-header">
+            <div class="materia-meta">
+              <span class="semestre">2026-1</span>
+              <span class="badge badge-contador">1 proyecto</span>
+            </div>
             <h3>Sistemas Distribuidos</h3>
           </div>
+          <p>
+            Comunicación entre servicios, contenedores Docker, redes privadas, variables de entorno y despliegue distribuido.
+          </p>
+          <p class="proyecto-representativo"><strong>Proyecto representativo:</strong> FerreControl</p>
           <a class="boton-ver-proyectos" href="2026-1-sistemas-distribuidos/index.html">Ver proyectos</a>
         </article>
       </div>
@@ -170,29 +194,39 @@
       </div>
     </section>
 
-    <section id="estructura-repositorio" class="seccion-info seccion-amplia" aria-labelledby="titulo-estructura-repositorio">
+    <section id="areas-interes" class="seccion-info seccion-amplia" aria-labelledby="titulo-areas-interes">
       <div class="encabezado-seccion">
-        <span class="etiqueta-seccion">Organización</span>
-        <h2 id="titulo-estructura-repositorio">Estructura del repositorio</h2>
+        <span class="etiqueta-seccion">Lectura rápida</span>
+        <h2 id="titulo-areas-interes">Áreas de interés</h2>
         <p>
-          El portafolio está organizado por páginas principales, materias académicas y recursos visuales/documentales. Cada materia agrupa los proyectos desarrollados durante el periodo correspondiente, junto con enlaces a repositorios, documentación o evidencias.
+          Una lectura más útil que la estructura de carpetas: qué tipo de trabajo concentra el portafolio y dónde aparece con mayor claridad.
         </p>
       </div>
 
-      <div class="panel-info estructura-repositorio">
-        <pre class="arbol-repositorio">/
-├── index.html
-├── proyectos.html
-├── logros.html
-├── css/
-├── img/
-│   ├── proyectos/
-│   └── logros/
-├── 2025-2-base-de-datos-i/
-├── 2026-0-base-de-datos-ii/
-├── 2026-0-estructura-de-datos/
-├── 2026-1-lenguajes-de-programacion/
-└── 2026-1-sistemas-distribuidos/</pre>
+      <div class="grid-metricas">
+        <article class="panel-info metrica-portafolio">
+          <span class="resumen-numero">7</span>
+          <h3>Proyectos publicados</h3>
+          <p>Aplicaciones de datos, backend, escritorio, simulación y sistemas distribuidos.</p>
+        </article>
+
+        <article class="panel-info metrica-portafolio">
+          <span class="resumen-numero">6</span>
+          <h3>Proyectos grupales</h3>
+          <p>Trabajos académicos con división de responsabilidades, integración y entregables compartidos.</p>
+        </article>
+
+        <article class="panel-info metrica-portafolio">
+          <span class="resumen-numero">1</span>
+          <h3>Proyecto individual</h3>
+          <p>Simulador Laravel + Prolog con reglas lógicas y flujo web propio.</p>
+        </article>
+
+        <article class="panel-info metrica-portafolio">
+          <span class="resumen-numero">3</span>
+          <h3>Áreas fuertes</h3>
+          <p>Backend, bases de datos y sistemas distribuidos como línea principal del portafolio.</p>
+        </article>
       </div>
     </section>
 

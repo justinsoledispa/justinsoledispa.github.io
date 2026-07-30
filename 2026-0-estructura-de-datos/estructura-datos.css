@@ -1,4 +1,4 @@
-/* =========================================================
+﻿/* =========================================================
    ESTRUCTURA DE DATOS - AJUSTES ESPECÍFICOS
    Hereda la estética global desde ../style.css
    ========================================================= */
@@ -142,4 +142,8 @@
     width: 100%;
     max-width: none;
   }
+}
+.tarjeta-proyecto .proyecto-detalle p {
+  margin: 0;
+  color: var(--muted);
 }

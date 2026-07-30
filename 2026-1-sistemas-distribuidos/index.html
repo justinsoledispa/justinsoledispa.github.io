@@ -14,12 +14,16 @@
   <nav class="navbar" aria-label="Navegación principal">
     <a class="navbar-logo" href="../index.html">Justin Soledispa</a>
 
-    <div class="navbar-links">
+    <button class="navbar-toggle" type="button" aria-controls="navbar-menu" aria-expanded="false" aria-label="Abrir menú de navegación">
+      <span class="navbar-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <div class="navbar-links" id="navbar-menu">
       <a href="../index.html">Inicio</a>
-      <a class="activo" href="../proyectos.html">Proyectos</a>
+      <a class="activo" href="../proyectos.html" aria-current="page">Proyectos</a>
       <a href="../logros.html">Logros</a>
       <a href="../index.html#contacto">Contacto</a>
       <a href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/justinsoledispa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
   </nav>
 
@@ -44,8 +48,8 @@
 
       <aside class="panel-info panel-resumen" aria-label="Resumen de Sistemas Distribuidos">
         <div class="resumen-item">
-          <span class="resumen-numero">2</span>
-          <span class="resumen-texto">proyectos registrados</span>
+          <span class="resumen-numero">1</span>
+          <span class="resumen-texto">proyecto registrado</span>
         </div>
 
         <div class="resumen-item">
@@ -73,18 +77,29 @@
 
       <div class="grid-materias grid-proyectos grid-proyectos-doble">
         <article class="tarjeta-materia tarjeta-proyecto tarjeta-proyecto-edd">
-          <img class="thumbnail-proyecto" src="../img/proyectos/ferrecontrol/thumbnail.png" alt="Vista previa de FerreControl">
+          <img class="thumbnail-proyecto" src="../img/proyectos/ferrecontrol/thumbnail.webp" alt="Vista previa de FerreControl" width="1896" height="862" loading="lazy">
           <div class="materia-header">
             <span class="badge badge-finalizado">Finalizado</span>
             <h3>FerreControl</h3>
           </div>
 
-          <p>
-            Sistema distribuido para gestionar inventario de una ferretería. La aplicación web en Express y EJS se conecta a MySQL mediante una red privada Tailscale y coordina un sistema de reportes en un contenedor independiente.
-          </p>
-
-          <div class="aporte-proyecto">
-            <strong>Mi aporte:</strong> aplicación de inventario con Express/EJS, conexión MySQL, Docker y comunicación privada mediante Tailscale.
+          <div class="proyecto-detalle">
+            <div>
+              <h4>Problema abordado</h4>
+              <p>Gestionar inventario desde una aplicación web conectada a una base de datos remota y a un servicio de reportes separado.</p>
+            </div>
+            <div>
+              <h4>Solución desarrollada</h4>
+              <p>Aplicación Express + EJS con MySQL en Docker, comunicación por Tailscale y acceso visual a un sistema de reportes independiente.</p>
+            </div>
+            <div>
+              <h4>Mi aporte específico</h4>
+              <p>Aplicación de inventario, rutas Express, vistas EJS, conexión MySQL, Dockerfile y comunicación privada mediante Tailscale.</p>
+            </div>
+            <div>
+              <h4>Resultado obtenido</h4>
+              <p>Sistema distribuido funcional para registrar productos, actualizar stock, consultar historial y acceder a reportes externos.</p>
+            </div>
           </div>
 
           <ul class="lista-tecnologias lista-proyecto">
@@ -101,32 +116,8 @@
             href="https://github.com/justinsoledispa/ferrecontrol-docker-app"
             target="_blank"
             rel="noopener noreferrer">
-            Ver repositorio
+            Ver repositorio del equipo
           </a>
-        </article>
-
-        <article class="tarjeta-materia tarjeta-proyecto tarjeta-proyecto-edd">
-          <div class="materia-header">
-            <span class="badge badge-pendiente">Pendiente</span>
-            <h3>Kubernetes</h3>
-          </div>
-
-          <p>
-            Espacio reservado para prácticas de orquestación, pods, servicios, escalamiento y despliegue declarativo.
-          </p>
-
-          <div class="aporte-proyecto">
-            <strong>Mi aporte:</strong> pendiente de documentar junto con el avance del proyecto.
-          </div>
-
-          <ul class="lista-tecnologias lista-proyecto">
-            <li>Pods</li>
-            <li>Services</li>
-            <li>Deployments</li>
-            <li>Escalamiento</li>
-          </ul>
-
-          <span class="boton-secundario">Próximamente</span>
         </article>
       </div>
     </section>
@@ -136,7 +127,7 @@
         <span class="etiqueta-seccion" data-num="02">CONCEPTOS</span>
         <h2 id="titulo-estructuras">Conceptos aplicados</h2>
         <p>
-          Conceptos principales previstos para los proyectos de la materia.
+          Conceptos principales aplicados en el proyecto publicado de la materia.
         </p>
       </div>
 

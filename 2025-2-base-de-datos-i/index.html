@@ -14,12 +14,16 @@
   <nav class="navbar" aria-label="Navegación principal">
     <a class="navbar-logo" href="../index.html">Justin Soledispa</a>
 
-    <div class="navbar-links">
+    <button class="navbar-toggle" type="button" aria-controls="navbar-menu" aria-expanded="false" aria-label="Abrir menú de navegación">
+      <span class="navbar-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <div class="navbar-links" id="navbar-menu">
       <a href="../index.html">Inicio</a>
-      <a class="activo" href="../proyectos.html">Proyectos</a>
+      <a class="activo" href="../proyectos.html" aria-current="page">Proyectos</a>
       <a href="../logros.html">Logros</a>
       <a href="../index.html#contacto">Contacto</a>
       <a href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/justinsoledispa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
   </nav>
 
@@ -73,18 +77,29 @@
 
       <div class="grid-materias grid-proyectos">
         <article class="tarjeta-materia tarjeta-proyecto">
-          <img class="thumbnail-proyecto" src="../img/proyectos/atrium/thumbnail.png" alt="Vista previa de ATRIUM">
+          <img class="thumbnail-proyecto" src="../img/proyectos/atrium/thumbnail.webp" alt="Vista previa de ATRIUM" width="745" height="528" loading="lazy">
           <div class="materia-header">
             <span class="badge badge-finalizado">Finalizado</span>
             <h3>ATRIUM: Centro de Emprendimiento</h3>
           </div>
 
-          <p>
-            Aplicación JavaFX conectada a PostgreSQL mediante JDBC, diseñada para gestionar eventos, emprendimientos, mentorías, carga masiva desde Excel y reportes exportables a PDF.
-          </p>
-
-          <div class="aporte-proyecto">
-            <strong>Mi aporte:</strong> arquitectura Java, conexión con PostgreSQL y generación de PDFs de los reportes.
+          <div class="proyecto-detalle">
+            <div>
+              <h4>Problema abordado</h4>
+              <p>Organizar eventos, emprendimientos, mentorías y reportes de un centro académico sin depender de registros dispersos.</p>
+            </div>
+            <div>
+              <h4>Solución desarrollada</h4>
+              <p>Aplicación JavaFX conectada a PostgreSQL mediante JDBC, con carga masiva desde Excel y reportes exportables a PDF.</p>
+            </div>
+            <div>
+              <h4>Mi aporte específico</h4>
+              <p>Arquitectura Java, conexión con PostgreSQL y generación de PDFs para los reportes.</p>
+            </div>
+            <div>
+              <h4>Resultado obtenido</h4>
+              <p>Sistema académico funcional para consultar, registrar y reportar información del centro de emprendimiento.</p>
+            </div>
           </div>
 
           <a 
@@ -92,7 +107,7 @@
             href="https://github.com/juandifrost17/proyecto_bd1_atrium" 
             target="_blank" 
             rel="noopener noreferrer">
-            Ver repositorio
+            Ver repositorio del equipo
           </a>
         </article>
       </div>

@@ -2,7 +2,8 @@
   --bg: #101018;
   --panel: #181824;
   --text: #F4F4F5;
-  --violet: #8B5CF6;
+  --violet: #5B21B6;
+  --violet-light: #A78BFA;
   --cyan: #4cc0cf;
   --lime: #abe34a;
   --muted: #A1A1AA;
@@ -18,7 +19,7 @@
 
   --radius: 0;
   --max-width: 1180px;
-  --nav-height: 76px;
+  --nav-height: 64px;
 }
 
 * {
@@ -39,6 +40,7 @@ body {
   color: var(--text);
   font-family: var(--font-main);
   line-height: 1.65;
+  cursor: auto;
 }
 
 img {

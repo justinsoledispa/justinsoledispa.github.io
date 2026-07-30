@@ -1,6 +1,3 @@
-/* =========================================================
-   2. HERO
-   ========================================================= */
 
 header,
 .hero {
@@ -84,6 +81,16 @@ header,
   text-transform: uppercase;
 }
 
+.hero-enfoque {
+  max-width: 680px;
+  margin-top: 0.75rem;
+  color: var(--violet-light);
+  font-family: var(--font-mono);
+  font-size: clamp(0.9rem, 1.35vw, 1rem);
+  font-weight: 700;
+  line-height: 1.55;
+}
+
 .hero-descripcion {
   max-width: 680px;
   margin-top: 1.35rem;
@@ -118,7 +125,7 @@ header,
 .hero-etiqueta::before {
   content: "//";
   margin-right: 0.65rem;
-  color: var(--violet);
+  color: var(--violet-light);
 }
 
 .hero-etiqueta[data-num]::before,

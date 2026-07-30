@@ -1,4 +1,4 @@
-/* =========================================================
+﻿/* =========================================================
    BASE DE DATOS I
    Ajustes específicos de la página interna.
    Este archivo debe cargarse después de ../style.css.
@@ -40,7 +40,7 @@
    ========================================================= */
 
 .grid-proyectos {
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr));
 }
 
 .tarjeta-proyecto {
@@ -135,4 +135,8 @@
     width: 100%;
     max-width: none;
   }
+}
+.tarjeta-proyecto .proyecto-detalle p {
+  margin: 0;
+  color: var(--muted);
 }

@@ -14,12 +14,16 @@
   <nav class="navbar" aria-label="Navegación principal">
     <a class="navbar-logo" href="../index.html">Justin Soledispa</a>
 
-    <div class="navbar-links">
+    <button class="navbar-toggle" type="button" aria-controls="navbar-menu" aria-expanded="false" aria-label="Abrir menú de navegación">
+      <span class="navbar-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <div class="navbar-links" id="navbar-menu">
       <a href="../index.html">Inicio</a>
-      <a class="activo" href="../proyectos.html">Proyectos</a>
+      <a class="activo" href="../proyectos.html" aria-current="page">Proyectos</a>
       <a href="../logros.html">Logros</a>
       <a href="../index.html#contacto">Contacto</a>
       <a href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/justinsoledispa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
   </nav>
 
@@ -73,18 +77,29 @@
 
       <div class="grid-materias grid-proyectos grid-proyectos-doble">
         <article class="tarjeta-materia tarjeta-proyecto tarjeta-proyecto-edd">
-          <img class="thumbnail-proyecto" src="../img/proyectos/blackboard/thumbnail.png" alt="Vista previa de Blackboard">
+          <img class="thumbnail-proyecto" src="../img/proyectos/blackboard/thumbnail.webp" alt="Vista previa de Blackboard" width="1200" height="800" loading="lazy">
           <div class="materia-header">
             <span class="badge badge-finalizado">Finalizado</span>
             <h3>Blackboard</h3>
           </div>
 
-          <p>
-            Sistema académico en Java para gestionar estudiantes, actividades, entregas, cálculos de calificaciones, consultas y reportes exportables en TXT o CSV.
-          </p>
-
-          <div class="aporte-proyecto">
-            <strong>Mi aporte:</strong> implementación de pilas para las calificaciones y menú de consultas en terminal.
+          <div class="proyecto-detalle">
+            <div>
+              <h4>Problema abordado</h4>
+              <p>Gestionar estudiantes, actividades, entregas y calificaciones con consultas y reportes sin depender de hojas aisladas.</p>
+            </div>
+            <div>
+              <h4>Solución desarrollada</h4>
+              <p>Sistema académico en Java con estructuras personalizadas, cálculo de notas y exportación de reportes en TXT o CSV.</p>
+            </div>
+            <div>
+              <h4>Mi aporte específico</h4>
+              <p>Implementación de pilas para el procesamiento de calificaciones y menú de consultas en terminal.</p>
+            </div>
+            <div>
+              <h4>Resultado obtenido</h4>
+              <p>Aplicación funcional para consultar rendimiento académico, calcular resultados y generar archivos de salida.</p>
+            </div>
           </div>
 
           <ul class="lista-tecnologias lista-proyecto">
@@ -99,23 +114,34 @@
             href="https://github.com/juandifrost17/proyecto_edd_blackboard" 
             target="_blank" 
             rel="noopener noreferrer">
-            Ver repositorio
+            Ver repositorio del equipo
           </a>
         </article>
 
         <article class="tarjeta-materia tarjeta-proyecto tarjeta-proyecto-edd">
-          <img class="thumbnail-proyecto" src="../img/proyectos/agenda/thumbnail.png" alt="Vista previa de Agenda">
+          <img class="thumbnail-proyecto" src="../img/proyectos/agenda/thumbnail.webp" alt="Vista previa de Agenda" width="1200" height="799" loading="lazy">
           <div class="materia-header">
             <span class="badge badge-finalizado">Finalizado</span>
             <h3>Agenda</h3>
           </div>
 
-          <p>
-            Aplicación de escritorio en Java para registrar, buscar, mostrar, eliminar, cargar y exportar contactos mediante búsqueda por prefijo y estructuras de prioridad.
-          </p>
-
-          <div class="aporte-proyecto">
-            <strong>Mi aporte:</strong> implementación del Heap personalizado para ordenar contactos por su frecuencia y funciones de búsqueda del TDA Aprefijo.
+          <div class="proyecto-detalle">
+            <div>
+              <h4>Problema abordado</h4>
+              <p>Registrar y consultar contactos de forma eficiente, incluyendo búsquedas parciales y priorización por frecuencia.</p>
+            </div>
+            <div>
+              <h4>Solución desarrollada</h4>
+              <p>Aplicación Java de escritorio con carga/exportación CSV, árbol de prefijos y estructuras de prioridad.</p>
+            </div>
+            <div>
+              <h4>Mi aporte específico</h4>
+              <p>Implementación del Heap personalizado para ordenar contactos y funciones de búsqueda del TDA Aprefijo.</p>
+            </div>
+            <div>
+              <h4>Resultado obtenido</h4>
+              <p>Agenda funcional con búsqueda por prefijo, gestión de contactos y exportación de datos.</p>
+            </div>
           </div>
 
           <ul class="lista-tecnologias lista-proyecto">
@@ -130,7 +156,7 @@
             href="https://github.com/juandifrost17/proyecto_edd_agenda" 
             target="_blank" 
             rel="noopener noreferrer">
-            Ver repositorio
+            Ver repositorio del equipo
           </a>
         </article>
       </div>

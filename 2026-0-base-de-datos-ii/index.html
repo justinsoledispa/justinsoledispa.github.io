@@ -14,12 +14,16 @@
   <nav class="navbar" aria-label="Navegación principal">
     <a class="navbar-logo" href="../index.html">Justin Soledispa</a>
 
-    <div class="navbar-links">
+    <button class="navbar-toggle" type="button" aria-controls="navbar-menu" aria-expanded="false" aria-label="Abrir menú de navegación">
+      <span class="navbar-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <div class="navbar-links" id="navbar-menu">
       <a href="../index.html">Inicio</a>
-      <a class="activo" href="../proyectos.html">Proyectos</a>
+      <a class="activo" href="../proyectos.html" aria-current="page">Proyectos</a>
       <a href="../logros.html">Logros</a>
       <a href="../index.html#contacto">Contacto</a>
       <a href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/justinsoledispa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
   </nav>
 
@@ -73,18 +77,29 @@
 
       <div class="grid-materias grid-proyectos">
         <article class="tarjeta-materia tarjeta-proyecto">
-          <img class="thumbnail-proyecto" src="../img/proyectos/enreach/thumbnail.png" alt="Vista previa de Enreach">
+          <img class="thumbnail-proyecto" src="../img/proyectos/enreach/thumbnail.webp" alt="Vista previa de Enreach" width="1883" height="935" loading="lazy">
           <div class="materia-header">
             <span class="badge badge-finalizado">Finalizado</span>
             <h3>ENREACH DATA WAREHOUSE/BI</h3>
           </div>
 
-          <p>
-            Implementación de un Data Warehouse para el sistema Enreach. Integra ETL con Pentaho Spoon, modelo dimensional en PostgreSQL, funciones SQL analíticas, API REST en Spring Boot y dashboards web en React.
-          </p>
-
-          <div class="aporte-proyecto">
-            <strong>Mi aporte:</strong> desarrollo de la Vista Partner, reportes analíticos, consultas SQL y conexión de datos para el dashboard.
+          <div class="proyecto-detalle">
+            <div>
+              <h4>Problema abordado</h4>
+              <p>Consolidar información operacional de facturación, cobranza, uso de servicios y comportamiento de clientes para análisis BI.</p>
+            </div>
+            <div>
+              <h4>Solución desarrollada</h4>
+              <p>Data Warehouse en PostgreSQL con ETL en Pentaho Spoon, modelo dimensional Kimball, API REST Spring Boot y dashboards React.</p>
+            </div>
+            <div>
+              <h4>Mi aporte específico</h4>
+              <p>Desarrollo de la Vista Partner, reportes analíticos, consultas SQL y conexión de datos para el dashboard.</p>
+            </div>
+            <div>
+              <h4>Resultado obtenido</h4>
+              <p>Tres vistas analíticas para Enreach, partners y clientes con KPIs y reportes de operación, cartera y uso.</p>
+            </div>
           </div>
 
           <a 
@@ -92,7 +107,7 @@
             href="https://github.com/juandifrost17/proyecto_bd2_enreach" 
             target="_blank" 
             rel="noopener noreferrer">
-            Ver repositorio
+            Ver repositorio del equipo
           </a>
         </article>
       </div>

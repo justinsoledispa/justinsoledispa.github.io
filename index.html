@@ -12,42 +12,49 @@
 <body>
   <nav class="navbar" aria-label="Navegación principal">
     <a class="navbar-logo" href="index.html">Justin Soledispa</a>
-    <div class="navbar-links">
-      <a class="activo" href="index.html">Inicio</a>
+    <button class="navbar-toggle" type="button" aria-controls="navbar-menu" aria-expanded="false" aria-label="Abrir menú de navegación">
+      <span class="navbar-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <div class="navbar-links" id="navbar-menu">
+      <a class="activo" href="index.html" aria-current="page">Inicio</a>
       <a href="proyectos.html">Proyectos</a>
       <a href="logros.html">Logros</a>
       <a href="index.html#contacto">Contacto</a>
       <a href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/justinsoledispa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
   </nav>
 
   <header id="inicio" class="hero">
     <div class="hero-layout">
       <div class="hero-contenido">
-        <span class="hero-etiqueta">Historial académico</span>
-        <h1>Portafolio de Proyectos</h1>
-        <p class="hero-subtitulo">Justin Soledispa | UEES</p>
+        <span class="hero-etiqueta">Backend · Datos · Sistemas</span>
+        <h1>Justin Soledispa.</h1>
+        <p class="hero-subtitulo">Estudiante de Ingeniería en Computación.</p>
+        <p class="hero-enfoque">Enfoque en backend, bases de datos y sistemas distribuidos.</p>
         <p class="hero-descripcion">
-          Espacio personal donde organizo mi avance universitario en programación, bases de datos, estructuras de datos, sistemas y tecnologías aplicadas.
+          Construyo proyectos académicos con criterio técnico: diseño de datos, APIs, ETL, contenedores y aplicaciones web que conectan procesos reales con soluciones mantenibles.
         </p>
         <div class="hero-acciones">
           <a class="boton-ver-proyectos" href="proyectos.html">Ver proyectos</a>
-          <a class="boton-secundario" href="#contacto">Contacto</a>
+          <a class="boton-secundario" href="cv-justin-soledispa.pdf" download>Descargar CV</a>
+          <a class="boton-secundario" href="https://github.com/justinsoledispa" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="boton-secundario" href="https://www.linkedin.com/in/justinsoledispa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
 
       <aside class="panel-info panel-resumen" aria-label="Resumen del portafolio">
         <div class="resumen-item">
+          <span class="resumen-numero">7</span>
+          <span class="resumen-texto">proyectos publicados</span>
+        </div>
+        <div class="resumen-item">
           <span class="resumen-numero">5</span>
-          <span class="resumen-texto">materias organizadas</span>
+          <span class="resumen-texto">materias documentadas</span>
         </div>
         <div class="resumen-item">
-          <span class="resumen-numero">2025 - 2026</span>
-          <span class="resumen-texto">periodos académicos</span>
-        </div>
-        <div class="resumen-item">
-          <span class="resumen-numero">GitHub</span>
-          <span class="resumen-texto">repositorios públicos</span>
+          <span class="resumen-numero">2</span>
+          <span class="resumen-texto">certificaciones AWS</span>
         </div>
       </aside>
     </div>
@@ -63,7 +70,7 @@
       <div class="panel-destacado">
         <h3>Construyendo soluciones con datos y software</h3>
         <p>
-          Este portafolio reúne proyectos académicos donde aplico programación, bases de datos y estructuras de datos para resolver problemas concretos: gestionar eventos, analizar información, crear reportes, organizar contactos y construir interfaces funcionales.
+          Este portafolio reúne proyectos donde practico arquitectura backend, modelado relacional y dimensional, integración entre servicios, despliegue con contenedores y construcción de interfaces funcionales para validar reglas de negocio.
         </p>
       </div>
     </section>
@@ -82,7 +89,7 @@
 
       <div class="grid-materias">
         <article class="tarjeta-materia">
-          <img class="thumbnail-proyecto" src="img/proyectos/enreach/thumbnail.png" alt="Vista previa de Enreach">
+          <img class="thumbnail-proyecto" src="img/proyectos/enreach/thumbnail.webp" alt="Vista previa de Enreach" width="1883" height="935" loading="lazy">
           <div class="materia-header">
             <span class="badge badge-finalizado">Base de Datos II</span>
             <h3>ENREACH DW/BI</h3>
@@ -99,11 +106,11 @@
       <li>Pentaho Spoon</li>
       <li>React</li>
     </ul>
-          <a class="boton-ver-proyectos" href="https://github.com/juandifrost17/proyecto_bd2_enreach">Ver repositorio</a>
+          <a class="boton-ver-proyectos" href="https://github.com/juandifrost17/proyecto_bd2_enreach" target="_blank" rel="noopener noreferrer">Ver repositorio del equipo</a>
         </article>
 
         <article class="tarjeta-materia">
-          <img class="thumbnail-proyecto" src="img/proyectos/stadpass/thumbnail.png" alt="Vista previa de StadPass">
+          <img class="thumbnail-proyecto" src="img/proyectos/stadpass/thumbnail.webp" alt="Vista previa de StadPass" width="1917" height="902" loading="lazy">
           <div class="materia-header">
             <span class="badge badge-finalizado">Lenguajes de Programación</span>
             <h3>StadPass</h3>
@@ -120,11 +127,11 @@
       <li>Bootstrap</li>
       <li>MySQL</li>
     </ul>
-          <a class="boton-ver-proyectos" href="https://github.com/justinsoledispa/acceso-estadio-laravel">Ver repositorio</a>
+          <a class="boton-ver-proyectos" href="https://github.com/justinsoledispa/acceso-estadio-laravel" target="_blank" rel="noopener noreferrer">Ver repositorio del equipo</a>
         </article>
 
         <article class="tarjeta-materia">
-          <img class="thumbnail-proyecto" src="img/proyectos/ferrecontrol/thumbnail.png" alt="Vista previa de FerreControl">
+          <img class="thumbnail-proyecto" src="img/proyectos/ferrecontrol/thumbnail.webp" alt="Vista previa de FerreControl" width="1896" height="862" loading="lazy">
           <div class="materia-header">
             <span class="badge badge-finalizado">Sistemas Distribuidos</span>
             <h3>FerreControl</h3>
@@ -146,7 +153,7 @@
             href="https://github.com/justinsoledispa/ferrecontrol-docker-app"
             target="_blank"
             rel="noopener noreferrer">
-            Ver repositorio
+            Ver repositorio del equipo
           </a>
         </article>
       </div>
@@ -235,9 +242,15 @@
         </article>
 
         <article class="tarjeta-contacto">
-          <h3>Credly</h3>
-          <p>Credenciales y certificaciones verificables.</p>
-          <a class="boton-contacto" href="https://www.credly.com/badges/378b0291-0039-4906-811d-ae0c5f3f1b5c/public_url" target="_blank" rel="noopener noreferrer">Ver credencial</a>
+          <h3>LinkedIn</h3>
+          <p>Perfil profesional, formación y actividad académica.</p>
+          <a class="boton-contacto" href="https://www.linkedin.com/in/justinsoledispa/" target="_blank" rel="noopener noreferrer">Ir a LinkedIn</a>
+        </article>
+
+        <article class="tarjeta-contacto">
+          <h3>CV</h3>
+          <p>Resumen profesional descargable con stack, proyectos y certificaciones.</p>
+          <a class="boton-contacto" href="cv-justin-soledispa.pdf" download>Descargar CV</a>
         </article>
 
         <article class="tarjeta-contacto">
@@ -253,6 +266,5 @@
     <p>© 2026 Justin Soledispa.</p>
   </footer>
   <script src="./script.js"></script>
-  <div class="custom-cursor" aria-hidden="true"></div>
 </body>
 </html>

@@ -1,6 +1,3 @@
-/* =========================================================
-   9. CONTACTO
-   ========================================================= */
 
 .seccion-contacto-final {
   min-height: 62vh;
@@ -16,7 +13,7 @@
 
 .grid-contacto {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.25rem;
   margin-top: 1rem;
 }
@@ -34,6 +31,8 @@
   color: var(--text);
   font-size: clamp(1.35rem, 2.8vw, 2rem);
   line-height: 1.08;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .tarjeta-contacto p {

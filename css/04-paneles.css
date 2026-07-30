@@ -1,14 +1,11 @@
-/* =========================================================
-   4. PANELES EDITORIALES
-   ========================================================= */
 
 .panel-info,
 .tarjeta-materia,
 .tarjeta-contacto {
   position: relative;
   background: var(--panel);
-  border: 1px solid var(--line-strong);
-  border-left: 6px solid var(--violet);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--violet);
 }
 
 .panel-info::before,
@@ -19,8 +16,9 @@
   top: -1px;
   right: -1px;
   width: 46px;
-  height: 10px;
+  height: 6px;
   background: var(--cyan);
+  opacity: 0.8;
 }
 
 .panel-info {
@@ -70,7 +68,7 @@
 
 .resumen-numero {
   display: block;
-  color: var(--violet);
+  color: var(--violet-light);
   font-family: var(--font-heavy);
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 900;
@@ -104,4 +102,11 @@
   font-weight: 700;
   line-height: 1.65;
   white-space: pre;
+}
+
+.tarjeta-tecnologia::before,
+.tarjeta-contacto::before,
+.metrica-portafolio::before,
+.timeline-periodo::before {
+  display: none;
 }
