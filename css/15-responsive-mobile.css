@@ -75,10 +75,12 @@
   .certificacion-imagen {
     order: -1;
     justify-content: flex-start;
+    width: auto;
   }
 
   .badge-certificacion-img {
     width: 150px;
+    max-width: 100%;
   }
 }
 

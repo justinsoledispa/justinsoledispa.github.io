@@ -1,0 +1,163 @@
+/* =========================================================
+   ANÁLISIS DE ALGORITMOS - AJUSTES ESPECÍFICOS
+   Hereda la estética global desde ../style.css
+   ========================================================= */
+
+/* =========================================================
+   1. HERO DE MATERIA
+   ========================================================= */
+
+.materia-analisis-algoritmos .hero-etiqueta,
+.materia-analisis-algoritmos .etiqueta-seccion {
+  color: var(--lime);
+}
+
+.materia-analisis-algoritmos .hero-etiqueta[data-num]::before,
+.materia-analisis-algoritmos .etiqueta-seccion[data-num]::before {
+  content: attr(data-num) " / ";
+  color: var(--cyan);
+  margin-right: 0.7rem;
+}
+
+.materia-analisis-algoritmos .hero h1 {
+  max-width: 980px;
+  font-size: clamp(2.6rem, 5.1vw, 4.85rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.materia-analisis-algoritmos .hero-descripcion {
+  max-width: 720px;
+}
+
+/* =========================================================
+   2. PROYECTOS
+   ========================================================= */
+
+.materia-analisis-algoritmos .grid-proyectos-doble {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.materia-analisis-algoritmos .tarjeta-proyecto-edd {
+  min-height: 420px;
+  gap: 1.25rem;
+}
+
+.materia-analisis-algoritmos .tarjeta-proyecto-edd .materia-header {
+  margin-bottom: 0;
+}
+
+.materia-analisis-algoritmos .tarjeta-proyecto-edd h3 {
+  font-size: clamp(1.85rem, 3.2vw, 2.65rem);
+  line-height: 1.03;
+  letter-spacing: -0.04em;
+}
+
+.materia-analisis-algoritmos .tarjeta-proyecto-edd p {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.materia-analisis-algoritmos .lista-proyecto {
+  margin-top: auto;
+  margin-bottom: 0.25rem;
+}
+
+.materia-analisis-algoritmos .tarjeta-proyecto-edd .boton-ver-proyectos {
+  width: fit-content;
+  max-width: max-content;
+  align-self: flex-start;
+  padding-inline: 1.4rem;
+}
+
+/* =========================================================
+   3. CONCEPTOS APLICADOS
+   ========================================================= */
+
+.materia-analisis-algoritmos .grid-estructuras {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.materia-analisis-algoritmos .grid-estructuras .tarjeta-tecnologia {
+  min-height: 245px;
+}
+
+.materia-analisis-algoritmos .grid-estructuras .tarjeta-tecnologia h3 {
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+}
+
+/* =========================================================
+   4. TECNOLOGÍAS Y FUNCIONAMIENTO
+   ========================================================= */
+
+.materia-analisis-algoritmos .grid-funcionamiento {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.materia-analisis-algoritmos .grid-funcionamiento .tarjeta-tecnologia {
+  min-height: 220px;
+}
+
+/* =========================================================
+   5. REGRESO
+   ========================================================= */
+
+.materia-analisis-algoritmos .seccion-volver {
+  padding: 4.5rem 0;
+}
+
+.materia-analisis-algoritmos .seccion-volver .panel-contacto {
+  max-width: 100%;
+}
+
+.materia-analisis-algoritmos .seccion-volver .boton-contacto {
+  width: fit-content;
+  max-width: max-content;
+  padding-inline: 1.4rem;
+}
+
+/* =========================================================
+   6. RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .materia-analisis-algoritmos .grid-estructuras {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .materia-analisis-algoritmos .grid-proyectos-doble,
+  .materia-analisis-algoritmos .grid-funcionamiento {
+    grid-template-columns: 1fr;
+  }
+
+  .materia-analisis-algoritmos .tarjeta-proyecto-edd {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .materia-analisis-algoritmos .hero h1 {
+    font-size: clamp(2.4rem, 13vw, 4rem);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+  }
+
+  .materia-analisis-algoritmos .grid-estructuras {
+    grid-template-columns: 1fr;
+  }
+
+  .materia-analisis-algoritmos .tarjeta-proyecto-edd .boton-ver-proyectos,
+  .materia-analisis-algoritmos .seccion-volver .boton-contacto {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.materia-analisis-algoritmos .tarjeta-proyecto .proyecto-detalle p {
+  margin: 0;
+  color: var(--muted);
+}

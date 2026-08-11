@@ -24,22 +24,27 @@
 }
 .certificacion-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 200px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) 160px;
+  align-items: start;
   gap: 2rem;
 }
 
 .certificacion-contenido {
   min-width: 0;
+  overflow: hidden;
 }
 
 .tarjeta-certificacion .materia-header {
+  min-width: 0;
   margin-bottom: 1rem;
 }
 
 .tarjeta-certificacion h3 {
-  font-size: clamp(1.65rem, 3.6vw, 2.65rem);
-  line-height: 1.05;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  line-height: 1.1;
+  overflow-wrap: normal;
+  word-break: normal;
+  min-width: 0;
 }
 
 .tarjeta-certificacion p {
@@ -60,10 +65,13 @@
   padding: 1rem;
   background: var(--bg);
   border: 1px solid var(--line-strong);
+  flex-shrink: 0;
+  width: 160px;
+  box-sizing: border-box;
 }
 
 .badge-certificacion-img {
-  width: 180px;
+  width: 100%;
   height: auto;
   object-fit: contain;
   filter: none;

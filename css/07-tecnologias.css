@@ -1,4 +1,4 @@
-﻿
+
 .grid-tecnologias {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -146,3 +146,54 @@
   }
 }
 
+/* =========================================================
+   MINI-CARDS DE CONCEPTOS APLICADOS
+   ========================================================= */
+
+.grid-conceptos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.concepto-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.2rem 1.4rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--violet);
+}
+
+.concepto-numero {
+  color: var(--violet-light);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+}
+
+.concepto-nombre {
+  display: block;
+  color: var(--text);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.concepto-desc {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .grid-conceptos {
+    grid-template-columns: 1fr;
+  }
+}

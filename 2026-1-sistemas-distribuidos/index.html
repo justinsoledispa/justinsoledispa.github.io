@@ -48,13 +48,13 @@
 
       <aside class="panel-info panel-resumen" aria-label="Resumen de Sistemas Distribuidos">
         <div class="resumen-item">
-          <span class="resumen-numero">1</span>
-          <span class="resumen-texto">proyecto registrado</span>
+          <span class="resumen-numero">2</span>
+          <span class="resumen-texto">proyectos registrados</span>
         </div>
 
         <div class="resumen-item">
           <span class="resumen-numero">Docker</span>
-          <span class="resumen-texto">Tailscale y servicios</span>
+          <span class="resumen-texto">Kubernetes y Tailscale</span>
         </div>
 
         <div class="resumen-item">
@@ -103,9 +103,7 @@
           </div>
 
           <ul class="lista-tecnologias lista-proyecto">
-            <li>Node.js</li>
             <li>Express</li>
-            <li>EJS</li>
             <li>MySQL</li>
             <li>Docker</li>
             <li>Tailscale</li>
@@ -119,6 +117,48 @@
             Ver repositorio del equipo
           </a>
         </article>
+
+        <article class="tarjeta-materia tarjeta-proyecto tarjeta-proyecto-edd">
+          <img class="thumbnail-proyecto" src="../img/proyectos/meshtask/thumbnail.webp" alt="Vista previa de MeshTask" width="1200" height="800" loading="lazy">
+          <div class="materia-header">
+            <span class="badge badge-finalizado">Finalizado</span>
+            <h3>MeshTask</h3>
+          </div>
+
+          <div class="proyecto-detalle">
+            <div>
+              <h4>Problema abordado</h4>
+              <p>Gestionar tareas desde una aplicación web cuyo frontend debe comunicarse con un backend desplegado en otra máquina dentro de una arquitectura distribuida.</p>
+            </div>
+            <div>
+              <h4>Solución desarrollada</h4>
+              <p>Frontend React + Vite con Docker, Nginx, manifiestos Kubernetes y configuración de API en runtime para conectarse al backend mediante Tailscale + NodePort.</p>
+            </div>
+            <div>
+              <h4>Mi aporte específico</h4>
+              <p>Frontend y despliegue con Docker y Kubernetes.</p>
+            </div>
+            <div>
+              <h4>Resultado obtenido</h4>
+              <p>Aplicación con CRUD de tareas y categorías, filtros y búsqueda, estados y prioridades, estadísticas rápidas, diseño responsive, comunicación frontend/backend distribuida y configuración de API en runtime.</p>
+            </div>
+          </div>
+
+          <ul class="lista-tecnologias lista-proyecto">
+            <li>React</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Tailscale</li>
+          </ul>
+
+          <a
+            class="boton-ver-proyectos"
+            href="https://github.com/justinsoledispa/meshtask-kubernetes"
+            target="_blank"
+            rel="noopener noreferrer">
+            Ver repositorio del equipo
+          </a>
+        </article>
       </div>
     </section>
 
@@ -127,45 +167,33 @@
         <span class="etiqueta-seccion" data-num="02">CONCEPTOS</span>
         <h2 id="titulo-estructuras">Conceptos aplicados</h2>
         <p>
-          Conceptos principales aplicados en el proyecto publicado de la materia.
+          Conceptos principales aplicados en los proyectos publicados de la materia.
         </p>
       </div>
 
-      <div class="grid-tecnologias grid-estructuras">
-        <article class="panel-info tarjeta-tecnologia">
-          <h3>Contenedores</h3>
-          <ul class="lista-tecnologias">
-            <li>Imágenes</li>
-            <li>Volúmenes</li>
-            <li>Redes</li>
-          </ul>
+      <div class="grid-conceptos">
+        <article class="concepto-card">
+          <span class="concepto-numero">01</span>
+          <strong class="concepto-nombre">Contenedorización</strong>
+          <p class="concepto-desc">Empaquetado de aplicación y base de datos en imágenes Docker con volúmenes persistentes para despliegues reproducibles.</p>
         </article>
 
-        <article class="panel-info tarjeta-tecnologia">
-          <h3>Servicios</h3>
-          <ul class="lista-tecnologias">
-            <li>APIs</li>
-            <li>Puertos</li>
-            <li>Reportes</li>
-          </ul>
+        <article class="concepto-card">
+          <span class="concepto-numero">02</span>
+          <strong class="concepto-nombre">Red privada distribuida</strong>
+          <p class="concepto-desc">Comunicación segura entre servicios en máquinas físicamente distintas usando Tailscale como overlay de red sin exposición pública.</p>
         </article>
 
-        <article class="panel-info tarjeta-tecnologia">
-          <h3>Orquestación</h3>
-          <ul class="lista-tecnologias">
-            <li>Pods</li>
-            <li>Deployments</li>
-            <li>Servicios</li>
-          </ul>
+        <article class="concepto-card">
+          <span class="concepto-numero">03</span>
+          <strong class="concepto-nombre">Orquestación</strong>
+          <p class="concepto-desc">Despliegue de pods, Deployments y Services en Kubernetes para administrar réplicas del frontend React con NodePort.</p>
         </article>
 
-        <article class="panel-info tarjeta-tecnologia">
-          <h3>Escalabilidad</h3>
-          <ul class="lista-tecnologias">
-            <li>Réplicas</li>
-            <li>Balanceo</li>
-            <li>Tailscale</li>
-          </ul>
+        <article class="concepto-card">
+          <span class="concepto-numero">04</span>
+          <strong class="concepto-nombre">Separación de servicios</strong>
+          <p class="concepto-desc">Arquitectura donde frontend, backend y base de datos son procesos independientes que se comunican únicamente por API REST.</p>
         </article>
       </div>
     </section>

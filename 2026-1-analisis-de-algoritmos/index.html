@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Proyectos académicos de Base de Datos II de Justin Soledispa.">
-  <title>Base de Datos II | Justin Soledispa</title>
+  <meta name="description" content="Proyectos académicos de Análisis de Algoritmos de Justin Soledispa.">
+  <title>Análisis de Algoritmos | Justin Soledispa</title>
 
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="./base-datos-ii.css">
+  <link rel="stylesheet" href="./analisis-algoritmos.css">
   <link rel="icon" type="image/png" href="/favicon.png">
 </head>
-<body>
+<body class="pagina-materia materia-analisis-algoritmos">
   <nav class="navbar" aria-label="Navegación principal">
     <a class="navbar-logo" href="../index.html">Justin Soledispa</a>
 
@@ -32,12 +32,12 @@
       <div class="hero-contenido">
         <span class="hero-etiqueta" data-num="00">MATERIA</span>
 
-        <h1>Base de Datos II</h1>
+        <h1>Análisis de Algoritmos</h1>
 
         <p class="hero-subtitulo">Proyectos de la materia</p>
 
         <p class="hero-descripcion">
-          Página dedicada al proyecto académico desarrollado en Base de Datos II, enfocado en la construcción de un Data Warehouse, procesos ETL, modelo dimensional y dashboards analíticos para el sistema Enreach.
+          Página dedicada a proyectos académicos de Análisis de Algoritmos, con enfoque en grafos, algoritmos de caminos, comparación empírica de complejidad, medición de rendimiento y visualización de resultados experimentales.
         </p>
 
         <div class="hero-acciones">
@@ -46,19 +46,19 @@
         </div>
       </div>
 
-      <aside class="panel-info panel-resumen" aria-label="Resumen de Base de Datos II">
+      <aside class="panel-info panel-resumen" aria-label="Resumen de Análisis de Algoritmos">
         <div class="resumen-item">
           <span class="resumen-numero">1</span>
           <span class="resumen-texto">proyecto registrado</span>
         </div>
 
         <div class="resumen-item">
-          <span class="resumen-numero">DW</span>
+          <span class="resumen-numero">Grafos</span>
           <span class="resumen-texto">enfoque principal</span>
         </div>
 
         <div class="resumen-item">
-          <span class="resumen-numero">2026-0</span>
+          <span class="resumen-numero">2026-1</span>
           <span class="resumen-texto">periodo académico</span>
         </div>
       </aside>
@@ -71,40 +71,41 @@
         <span class="etiqueta-seccion" data-num="01">PROYECTOS</span>
         <h2 id="titulo-proyectos">Proyectos desarrollados</h2>
         <p>
-          Repositorio asociado a la materia Base de Datos II.
+          Simulaciones y experimentos académicos para analizar algoritmos sobre grafos, comparar enfoques y documentar resultados medibles.
         </p>
       </div>
 
-      <div class="grid-materias grid-proyectos">
-        <article class="tarjeta-materia tarjeta-proyecto">
-          <img class="thumbnail-proyecto" src="../img/proyectos/enreach/thumbnail.webp" alt="Vista previa de Enreach" width="1883" height="935" loading="lazy">
+      <div class="grid-materias grid-proyectos grid-proyectos-doble">
+        <article class="tarjeta-materia tarjeta-proyecto tarjeta-proyecto-edd">
+          <img class="thumbnail-proyecto" src="../img/proyectos/analisis-algoritmos/thumbnail.webp" alt="Vista previa de Propagación de Malware en un Servidor mediante Grafos" width="1200" height="800" loading="lazy">
           <div class="materia-header">
             <span class="badge badge-finalizado">Finalizado</span>
-            <h3>ENREACH DATA WAREHOUSE/BI</h3>
+            <h3>Propagación de Malware en un Servidor mediante Grafos</h3>
           </div>
 
           <div class="proyecto-detalle">
             <div>
               <h4>Problema abordado</h4>
-              <p>Consolidar información operacional de facturación, cobranza, uso de servicios y comportamiento de clientes para análisis BI.</p>
+              <p>Modelar y analizar cómo podría propagarse malware sobre una red representada como grafo, identificando rutas de máxima probabilidad de propagación entre nodos.</p>
             </div>
             <div>
               <h4>Solución desarrollada</h4>
-              <p>Data Warehouse en PostgreSQL con ETL en Pentaho Spoon, modelo dimensional Kimball, API REST Spring Boot y dashboards React.</p>
+              <p>Simulación académica sobre un grafo dirigido y ponderado de 50 nodos y 86 aristas que representa dos computadoras conectadas mediante SSH, comparando versiones adaptadas de Dijkstra y Bellman-Ford.</p>
             </div>
             <div>
               <h4>Mi aporte específico</h4>
-              <p>Desarrollo de la Vista Partner, reportes analíticos, consultas SQL y conexión de datos para el dashboard.</p>
+              <p>Pruebas e implementación de Bellman-Ford.</p>
             </div>
             <div>
               <h4>Resultado obtenido</h4>
-              <p>Tres vistas analíticas para Enreach, partners y clientes con KPIs y reportes de operación, cartera y uso.</p>
+              <p>Comparación empírica entre algoritmos con medición de tiempo y memoria, 5 casos experimentales, 20 repeticiones por algoritmo y caso, 800 mediciones grupales, GUI con Tkinter, TUI, visualización del grafo y pruebas automatizadas.</p>
             </div>
           </div>
 
+         
           <a
             class="boton-ver-proyectos"
-            href="https://github.com/juandifrost17/proyecto_bd2_enreach"
+            href="https://github.com/ueesaalg/aalg_act2_2p_ord1_26_grupo3"
             target="_blank"
             rel="noopener noreferrer">
             Ver repositorio del equipo
@@ -113,45 +114,74 @@
       </div>
     </section>
 
-    <section id="temas" class="seccion-info seccion-amplia" aria-labelledby="titulo-temas">
+    <section id="estructuras" class="seccion-info seccion-amplia" aria-labelledby="titulo-estructuras">
       <div class="encabezado-seccion">
         <span class="etiqueta-seccion" data-num="02">CONCEPTOS</span>
-        <h2 id="titulo-temas">Conceptos aplicados</h2>
+        <h2 id="titulo-estructuras">Conceptos aplicados</h2>
         <p>
-          Conocimientos académicos trabajados durante el desarrollo del proyecto de la materia.
+          Conceptos principales aplicados en el proyecto publicado de la materia.
         </p>
       </div>
 
       <div class="grid-conceptos">
         <article class="concepto-card">
           <span class="concepto-numero">01</span>
-          <strong class="concepto-nombre">Modelado dimensional</strong>
-          <p class="concepto-desc">Esquema estrella con tablas de hechos y dimensiones bajo la metodología Kimball para estructurar datos analíticos.</p>
+          <strong class="concepto-nombre">Análisis Empírico</strong>
+          <p class="concepto-desc">Ejecuciones separadas de tiempo y memorias para procesar en gráficas</p>
         </article>
 
         <article class="concepto-card">
           <span class="concepto-numero">02</span>
-          <strong class="concepto-nombre">Proceso ETL</strong>
-          <p class="concepto-desc">Extracción, transformación y carga de datos operacionales (OLTP) hacia el Data Warehouse (OLAP) con Pentaho Spoon.</p>
+          <strong class="concepto-nombre">Recorrido de Grafos</strong>
+          <p class="concepto-desc">Comparación entre estragias voraz vs. dinámica</p>
         </article>
 
-        <article class="concepto-card">
-          <span class="concepto-numero">03</span>
-          <strong class="concepto-nombre">Consultas analíticas</strong>
-          <p class="concepto-desc">Funciones de ventana y agregaciones SQL para calcular KPIs de facturación, cartera y uso de servicios por vista.</p>
+      
+      </div>
+    </section>
+
+    <section id="tecnologias" class="seccion-info seccion-amplia" aria-labelledby="titulo-tecnologias">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion" data-num="03">TECNOLOGÍAS</span>
+        <h2 id="titulo-tecnologias">Tecnologías y funcionamiento</h2>
+        <p>
+          Herramientas y enfoques comunes para construir, ejecutar y evaluar los proyectos de la materia.
+        </p>
+      </div>
+
+      <div class="grid-tecnologias grid-funcionamiento">
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Lenguaje</h3>
+          <ul class="lista-tecnologias">
+            <li>Python</li>
+            <li>unittest</li>
+            <li>tracemalloc</li>
+          </ul>
         </article>
 
-        <article class="concepto-card">
-          <span class="concepto-numero">04</span>
-          <strong class="concepto-nombre">Visualización BI</strong>
-          <p class="concepto-desc">Dashboards interactivos en React que consumen una API REST Spring Boot para presentar métricas operacionales.</p>
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Modelado</h3>
+          <ul class="lista-tecnologias">
+            <li>NetworkX</li>
+            <li>Grafos dirigidos</li>
+            <li>Pesos</li>
+          </ul>
+        </article>
+
+        <article class="panel-info tarjeta-tecnologia">
+          <h3>Interfaz</h3>
+          <ul class="lista-tecnologias">
+            <li>Tkinter</li>
+            <li>Matplotlib</li>
+            <li>TUI</li>
+          </ul>
         </article>
       </div>
     </section>
 
     <section class="seccion-info seccion-volver" aria-label="Volver al portafolio">
       <div class="panel-info panel-contacto">
-        <span class="etiqueta-seccion" data-num="03">REGRESO</span>
+        <span class="etiqueta-seccion" data-num="04">REGRESO</span>
         <h2>Volver al portafolio</h2>
         <p>
           Regresa al listado general de materias y proyectos académicos.

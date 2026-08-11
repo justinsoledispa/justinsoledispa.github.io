@@ -48,7 +48,7 @@
 
       <aside class="panel-info panel-resumen" aria-label="Resumen de Lenguajes de Programación">
         <div class="resumen-item">
-          <span class="resumen-numero">2</span>
+          <span class="resumen-numero">3</span>
           <span class="resumen-texto">proyectos desarrollados</span>
         </div>
 
@@ -102,17 +102,10 @@
             </div>
           </div>
 
-          <ul class="lista-tecnologias lista-proyecto">
-            <li>Laravel 13</li>
-            <li>PHP 8.3</li>
-            <li>SWI-Prolog</li>
-            <li>Blade</li>
-          </ul>
-
-          <a 
-            class="boton-ver-proyectos" 
-            href="https://github.com/justinsoledispa/laravel-prolog-game-simulator" 
-            target="_blank" 
+          <a
+            class="boton-ver-proyectos"
+            href="https://github.com/justinsoledispa/laravel-prolog-game-simulator"
+            target="_blank"
             rel="noopener noreferrer">
             Ver repositorio del equipo
           </a>
@@ -144,18 +137,45 @@
             </div>
           </div>
 
-          <ul class="lista-tecnologias lista-proyecto">
-            <li>Laravel 13</li>
-            <li>PHP 8.5</li>
-            <li>Blade + Bootstrap</li>
-            <li>MySQL</li>
-            <li>Middleware por rol</li>
-          </ul>
+          <a
+            class="boton-ver-proyectos"
+            href="https://github.com/justinsoledispa/acceso-estadio-laravel"
+            target="_blank"
+            rel="noopener noreferrer">
+            Ver repositorio del equipo
+          </a>
+        </article>
 
-          <a 
-            class="boton-ver-proyectos" 
-            href="https://github.com/justinsoledispa/acceso-estadio-laravel" 
-            target="_blank" 
+        <article class="tarjeta-materia tarjeta-proyecto">
+          <img class="thumbnail-proyecto" src="../img/proyectos/abyss-diver/thumbnail.webp" alt="Vista previa de Abyss Diver" width="1200" height="800" loading="lazy">
+          <div class="materia-header">
+            <span class="badge badge-finalizado">Finalizado</span>
+            <h3>Abyss Diver</h3>
+          </div>
+
+          <div class="proyecto-detalle">
+            <div>
+              <h4>Problema abordado</h4>
+              <p>Diseñar un juego 2D de exploración submarina donde el jugador debe completar cada nivel administrando oxígeno y vidas mientras recolecta recursos y enfrenta enemigos.</p>
+            </div>
+            <div>
+              <h4>Solución desarrollada</h4>
+              <p>Juego 2D de exploración submarina desarrollado en Unity con movimiento, combate, sistema de oxígeno, minerales, score y arquitectura basada en managers.</p>
+            </div>
+            <div>
+              <h4>Mi aporte específico</h4>
+              <p>Nivel Difícil, BGM, Pantallas y Animaciones.</p>
+            </div>
+            <div>
+              <h4>Resultado obtenido</h4>
+              <p>Juego con movimiento 2D WASD, disparo, sistema de oxígeno, vidas e invulnerabilidad, minerales y score, high score persistente, varios tipos de enemigos con animaciones, spawning aleatorio controlado, pantallas de victoria y derrota, y música por escena.</p>
+            </div>
+          </div>
+
+          <a
+            class="boton-ver-proyectos"
+            href="https://github.com/justsole1385/abyss-diver"
+            target="_blank"
             rel="noopener noreferrer">
             Ver repositorio del equipo
           </a>
@@ -172,84 +192,34 @@
         </p>
       </div>
 
-      <div class="grid-tecnologias">
-        <article class="panel-info tarjeta-tecnologia">
-          <h3>Programación lógica</h3>
-          <ul class="lista-tecnologias">
-            <li>Base de conocimiento</li>
-            <li>Reglas de misión</li>
-            <li>Consultas Prolog</li>
-          </ul>
+      <div class="grid-conceptos">
+        <article class="concepto-card">
+          <span class="concepto-numero">01</span>
+          <strong class="concepto-nombre">Programación lógica</strong>
+          <p class="concepto-desc">Reglas Prolog evaluadas desde Laravel para validar condiciones de misión y resultado de combate sin condicionales rígidos en el backend.</p>
         </article>
 
-        <article class="panel-info tarjeta-tecnologia">
-          <h3>Control de acceso</h3>
-          <ul class="lista-tecnologias">
-            <li>Middleware</li>
-            <li>Métricas</li>
-            <li>Transaccionalidad</li>
-          </ul>
+        <article class="concepto-card">
+          <span class="concepto-numero">02</span>
+          <strong class="concepto-nombre">Control de acceso por roles</strong>
+          <p class="concepto-desc">Middleware Laravel con tres niveles de autorización para distinguir administrador, operador y usuario final en StadPass.</p>
         </article>
 
-        <article class="panel-info tarjeta-tecnologia">
-          <h3>Reglas de negocio</h3>
-          <ul class="lista-tecnologias">
-            <li>Validaciones</li>
-            <li>Roles</li>
-            <li>Estados</li>
-          </ul>
+        <article class="concepto-card">
+          <span class="concepto-numero">03</span>
+          <strong class="concepto-nombre">Reglas de negocio declarativas</strong>
+          <p class="concepto-desc">Validaciones de zona, punto de ingreso y tipo de credencial expresadas como predicados Prolog separados del backend web.</p>
+        </article>
+
+        <article class="concepto-card">
+          <span class="concepto-numero">04</span>
+          <strong class="concepto-nombre">Arquitectura orientada a eventos</strong>
+          <p class="concepto-desc">Ciclo de juego en Unity con managers independientes para oxígeno, vidas, score y spawning controlado por estado del nivel.</p>
         </article>
       </div>
     </section>
 
-    <section id="tecnologias" class="seccion-info seccion-amplia" aria-labelledby="titulo-tecnologias">
-      <div class="encabezado-seccion">
-        <span class="etiqueta-seccion" data-num="03">TECNOLOGÍAS</span>
-        <h2 id="titulo-tecnologias">Tecnologías y funcionamiento</h2>
-        <p>
-          Herramientas utilizadas para construir, conectar y presentar los proyectos de la materia.
-        </p>
-      </div>
-
-      <div class="grid-tecnologias">
-        <article class="panel-info tarjeta-tecnologia">
-          <h3>Backend</h3>
-          <ul class="lista-tecnologias">
-            <li>Laravel</li>
-            <li>PHP</li>
-            <li>Controladores</li>
-          </ul>
-        </article>
-
-        <article class="panel-info tarjeta-tecnologia">
-          <h3>Lógica</h3>
-          <ul class="lista-tecnologias">
-            <li>Prolog</li>
-            <li>SWI-Prolog</li>
-            <li>Reglas</li>
-          </ul>
-        </article>
-
-        <article class="panel-info tarjeta-tecnologia">
-          <h3>Interfaz</h3>
-          <ul class="lista-tecnologias">
-            <li>Blade</li>
-            <li>Bootstrap/CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </article>
-
-        <article class="panel-info tarjeta-tecnologia">
-          <h3>Datos</h3>
-          <ul class="lista-tecnologias">
-            <li>MySQL</li>
-            <li>Migraciones</li>
-            <li>Relaciones pivote</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
+  
     <section class="seccion-info seccion-volver" aria-label="Volver al portafolio">
       <div class="panel-info panel-contacto">
         <span class="etiqueta-seccion" data-num="04">REGRESO</span>
